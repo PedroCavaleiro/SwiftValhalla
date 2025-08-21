@@ -8,7 +8,7 @@
 import Foundation
 
 /// An enum with 3 values.
-public enum DirectionType: String, Codable {
+public enum DirectionType: String, Codable, Sendable {
     
     /// Indicating no maneuvers or instructions should be returned.
     case none = "none"

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Directions response format
-public enum Format: String, Codable {
+public enum Format: String, Codable, Sendable {
     /// Is default valhalla routing directions JSON format
     case json = "json"
     /// Returns the route as a GPX (GPS exchange format) XML track

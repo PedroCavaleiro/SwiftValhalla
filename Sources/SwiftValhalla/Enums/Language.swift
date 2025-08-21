@@ -8,7 +8,7 @@
 import Foundation
 
 /// The language of the narration instructions based on the IETF BCP 47 language tag string. If no language is specified or the specified language is unsupported, United States-based English (en-US) is used.
-public enum Language: String, Codable {
+public enum Language: String, Codable, Sendable {
     
     case bulgarian = "bg-BG"
     case catalan = "ca-ES"
