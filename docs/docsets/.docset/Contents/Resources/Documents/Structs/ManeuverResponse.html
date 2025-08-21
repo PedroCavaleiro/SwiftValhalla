@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ManeuverResponse Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/ManeuverResponse" class="dashAnchor"></a>
+    <a title="ManeuverResponse Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Structs.html">Structures</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SwiftValhalla.ManeuverResponse Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SwiftValhalla.html">SwiftValhalla</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BicycleType.html">BicycleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CostingModel.html">CostingModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DirectionType.html">DirectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Driveability.html">Driveability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Filter.html">Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FlowSpeeds.html">FlowSpeeds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Format.html">Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Language.html">Language</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ManeuverType.html">ManeuverType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType.html">MatchType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NodeType.html">NodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PedestrianType.html">PedestrianType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferredSide.html">PreferredSide</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RoadClass.html">RoadClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SacScale.html">SacScale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeFormat.html">ShapeFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeMatch.html">ShapeMatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Sidewalk.html">Sidewalk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Surface.html">Surface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TraceType.html">TraceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitStopType.html">TransitStopType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitType.html">TransitType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelMode.html">TravelMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelType.html">TravelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Unit.html">Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Use.html">Use</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VehicleType.html">VehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectionsOptions.html">DirectionsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Lane.html">Lane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LaneDirection.html">LaneDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla11LegResponseV">LegResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla8LocationV">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverResponse.html">ManeuverResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverSignElement.html">ManeuverSignElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RouteResponse.html">RouteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla12SearchFilterV">SearchFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignResponse.html">SignResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SummaryResponse.html">SummaryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceOptions.html">TraceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitInfo.html">TransitInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitStop.html">TransitStop</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Cyclabilitya">Cyclability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla14Traversabilitya">Traversability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12TripResponsea">TripResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Walkabilitya">Walkability</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ManeuverResponse</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ManeuverResponse</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A single maneuver within a leg describing an instruction, timing,
+geometry indices, and other metadata used for routing and navigation.</p>
+
+              <div>
+                <h4>Parameters</h4>
+                <table class="graybox">
+                  <tbody>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>type</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Numeric identifier for the maneuver type.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>instruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Human-readable instruction text, if present.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>verbalSuccinctTransitionInstruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional succinct verbal transition instruction.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>verbalPreTransitionInstruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional verbal pre-transition instruction.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>verbalPostTransitionInstruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional verbal post-transition instruction.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>streetNames</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Array of street names involved in the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>time</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Time in seconds for the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>length</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Length in meters for the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>cost</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Cost metric for the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>beginShapeIndex</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Start index into the route shape.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>endShapeIndex</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>End index into the route shape.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>verbalMultiCue</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether verbal multi-cue is enabled.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>travelMode</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Travel mode (drive, pedestrian, bicycle, transit).</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>travelType</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Specific travel type associated with the travel mode.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>beginStreetNames</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional beginning street names.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>toll</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether the maneuver involves a toll.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>highway</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether the maneuver involves a highway.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>ferry</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether the maneuver involves a ferry.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>sign</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional sign information associated with the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>roundaboutExitCount</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional roundabout exit count.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>departInstruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional depart instruction.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>verbalDepartInstruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional verbal depart instruction.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>arriveInstruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional arrive instruction.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>verbalArriveInstruction</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional verbal arrive instruction.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>transitInfo</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional transit-specific information.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>bearingBefore</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional bearing before the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>bearingAfter</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional bearing after the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>lanes</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Optional lanes metadata for the maneuver.</p>
+                          </div>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV4typeSivp"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV4typeSivp">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV11instructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/instruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV11instructionSSSgvp">instruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">instruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV35verbalSuccinctTransitionInstructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/verbalSuccinctTransitionInstruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV35verbalSuccinctTransitionInstructionSSSgvp">verbalSuccinctTransitionInstruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verbalSuccinctTransitionInstruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV30verbalPreTransitionInstructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/verbalPreTransitionInstruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV30verbalPreTransitionInstructionSSSgvp">verbalPreTransitionInstruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verbalPreTransitionInstruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV31verbalPostTransitionInstructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/verbalPostTransitionInstruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV31verbalPostTransitionInstructionSSSgvp">verbalPostTransitionInstruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verbalPostTransitionInstruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV11streetNamesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/streetNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV11streetNamesSaySSGvp">streetNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">streetNames</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV4timeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/time" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV4timeSdvp">time</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">time</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV6lengthSdvp"></a>
+                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV6lengthSdvp">length</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV4costSdvp"></a>
+                    <a name="//apple_ref/swift/Property/cost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV4costSdvp">cost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cost</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV15beginShapeIndexSivp"></a>
+                    <a name="//apple_ref/swift/Property/beginShapeIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV15beginShapeIndexSivp">beginShapeIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">beginShapeIndex</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV13endShapeIndexSivp"></a>
+                    <a name="//apple_ref/swift/Property/endShapeIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV13endShapeIndexSivp">endShapeIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">endShapeIndex</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV14verbalMultiCueSbvp"></a>
+                    <a name="//apple_ref/swift/Property/verbalMultiCue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV14verbalMultiCueSbvp">verbalMultiCue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verbalMultiCue</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV10travelModeAA06TravelF0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/travelMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV10travelModeAA06TravelF0Ovp">travelMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">travelMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/TravelMode.html">TravelMode</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV10travelTypeAA06TravelF0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/travelType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV10travelTypeAA06TravelF0Ovp">travelType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">travelType</span><span class="p">:</span> <span class="kt"><a href="../Enums/TravelType.html">TravelType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV16beginStreetNamesSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/beginStreetNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV16beginStreetNamesSSSgvp">beginStreetNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">beginStreetNames</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV4tollSbvp"></a>
+                    <a name="//apple_ref/swift/Property/toll" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV4tollSbvp">toll</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">toll</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV7highwaySbvp"></a>
+                    <a name="//apple_ref/swift/Property/highway" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV7highwaySbvp">highway</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">highway</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV5ferrySbvp"></a>
+                    <a name="//apple_ref/swift/Property/ferry" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV5ferrySbvp">ferry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ferry</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV4signAA04SignD0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sign" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV4signAA04SignD0VSgvp">sign</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sign</span><span class="p">:</span> <span class="kt"><a href="../Structs/SignResponse.html">SignResponse</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV19roundaboutExitCountSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/roundaboutExitCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV19roundaboutExitCountSiSgvp">roundaboutExitCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">roundaboutExitCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV17departInstructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/departInstruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV17departInstructionSSSgvp">departInstruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">departInstruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV23verbalDepartInstructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/verbalDepartInstruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV23verbalDepartInstructionSSSgvp">verbalDepartInstruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verbalDepartInstruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV17arriveInstructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/arriveInstruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV17arriveInstructionSSSgvp">arriveInstruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">arriveInstruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV23verbalArriveInstructionSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/verbalArriveInstruction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV23verbalArriveInstructionSSSgvp">verbalArriveInstruction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verbalArriveInstruction</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV11transitInfoAA07TransitF0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transitInfo" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV11transitInfoAA07TransitF0VSgvp">transitInfo</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">transitInfo</span><span class="p">:</span> <span class="kt"><a href="../Structs/TransitInfo.html">TransitInfo</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV13bearingBeforeSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/bearingBefore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV13bearingBeforeSiSgvp">bearingBefore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">bearingBefore</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV12bearingAfterSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/bearingAfter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV12bearingAfterSiSgvp">bearingAfter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">bearingAfter</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla16ManeuverResponseV5lanesSayAA4LaneVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lanes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla16ManeuverResponseV5lanesSayAA4LaneVGSgvp">lanes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">lanes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Lane.html">Lane</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-08-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

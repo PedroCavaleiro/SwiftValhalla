@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DirectionsOptions Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/DirectionsOptions" class="dashAnchor"></a>
+    <a title="DirectionsOptions Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Structs.html">Structures</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SwiftValhalla.DirectionsOptions Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SwiftValhalla.html">SwiftValhalla</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BicycleType.html">BicycleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CostingModel.html">CostingModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DirectionType.html">DirectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Driveability.html">Driveability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Filter.html">Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FlowSpeeds.html">FlowSpeeds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Format.html">Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Language.html">Language</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ManeuverType.html">ManeuverType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType.html">MatchType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NodeType.html">NodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PedestrianType.html">PedestrianType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferredSide.html">PreferredSide</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RoadClass.html">RoadClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SacScale.html">SacScale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeFormat.html">ShapeFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeMatch.html">ShapeMatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Sidewalk.html">Sidewalk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Surface.html">Surface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TraceType.html">TraceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitStopType.html">TransitStopType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitType.html">TransitType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelMode.html">TravelMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelType.html">TravelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Unit.html">Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Use.html">Use</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VehicleType.html">VehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectionsOptions.html">DirectionsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Lane.html">Lane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LaneDirection.html">LaneDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla11LegResponseV">LegResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla8LocationV">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverResponse.html">ManeuverResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverSignElement.html">ManeuverSignElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RouteResponse.html">RouteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla12SearchFilterV">SearchFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignResponse.html">SignResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SummaryResponse.html">SummaryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceOptions.html">TraceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitInfo.html">TransitInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitStop.html">TransitStop</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Cyclabilitya">Cyclability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla14Traversabilitya">Traversability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12TripResponsea">TripResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Walkabilitya">Walkability</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DirectionsOptions</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DirectionsOptions</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Directions options structure</p>
+
+              <div>
+                <h4>Parameters</h4>
+                <table class="graybox">
+                  <tbody>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>units</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Distance units for output. Allowable unit types are miles (or mi) and kilometers (or km).</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>language</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>The language of the narration instructions based on the IETF BCP 47 language tag string.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>directionsType</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>What should be returned for directions</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>format</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Format of the response</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>shapeFormat</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>If <code>&quot;format&quot; : &quot;osrm&quot;</code> is set: Specifies the optional format for the path shape of each connection.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>bannerInstructions</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>If the <code>format</code> is <code>osrm</code>, this boolean indicates if each step should have the additional <code>bannerInstructions</code> attribute, which can be displayed in some navigation system SDKs.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>voiceInstructions</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>If the <code>format</code> is <code>osrm</code>, this boolean indicates if each step should have the additional <code>voiceInstructions</code> attribute, which can be heard in some navigation system SDKs.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>alternates</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>A number denoting how many alternate routes should be provided. There may be no alternates or less alternates than the user specifies. Alternates are not yet supported on multipoint routes (that is, routes with more than 2 locations). They are also not supported on time dependent routes.</p>
+                          </div>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV5unitsAA4UnitOvp"></a>
+                    <a name="//apple_ref/swift/Property/units" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV5unitsAA4UnitOvp">units</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">units</span><span class="p">:</span> <span class="kt"><a href="../Enums/Unit.html">Unit</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV8languageAA8LanguageOvp"></a>
+                    <a name="//apple_ref/swift/Property/language" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV8languageAA8LanguageOvp">language</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">language</span><span class="p">:</span> <span class="kt"><a href="../Enums/Language.html">Language</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV14directionsTypeAA09DirectionF0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/directionsType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV14directionsTypeAA09DirectionF0Ovp">directionsType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">directionsType</span><span class="p">:</span> <span class="kt"><a href="../Enums/DirectionType.html">DirectionType</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV6formatAA6FormatOvp"></a>
+                    <a name="//apple_ref/swift/Property/format" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV6formatAA6FormatOvp">format</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">format</span><span class="p">:</span> <span class="kt"><a href="../Enums/Format.html">Format</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV11shapeFormatAA05ShapeF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/shapeFormat" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV11shapeFormatAA05ShapeF0OSgvp">shapeFormat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">shapeFormat</span><span class="p">:</span> <span class="kt"><a href="../Enums/ShapeFormat.html">ShapeFormat</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV18bannerInstructionsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/bannerInstructions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV18bannerInstructionsSbvp">bannerInstructions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">bannerInstructions</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV17voiceInstructionsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/voiceInstructions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV17voiceInstructionsSbvp">voiceInstructions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">voiceInstructions</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV10alternatesSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/alternates" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV10alternatesSiSgvp">alternates</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">alternates</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla17DirectionsOptionsV5units8language14directionsType6format11shapeFormat18bannerInstructions05voiceM010alternatesAcA4UnitO_AA8LanguageOAA09DirectionH0OAA0K0OAA05ShapeK0OSgS2bSiSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(units:language:directionsType:format:shapeFormat:bannerInstructions:voiceInstructions:alternates:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17DirectionsOptionsV5units8language14directionsType6format11shapeFormat18bannerInstructions05voiceM010alternatesAcA4UnitO_AA8LanguageOAA09DirectionH0OAA0K0OAA05ShapeK0OSgS2bSiSgtcfc">init(units:<wbr>language:<wbr>directionsType:<wbr>format:<wbr>shapeFormat:<wbr>bannerInstructions:<wbr>voiceInstructions:<wbr>alternates:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">units</span><span class="p">:</span> <span class="kt"><a href="../Enums/Unit.html">Unit</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">kilometers</span><span class="p">,</span>
+    <span class="nv">language</span><span class="p">:</span> <span class="kt"><a href="../Enums/Language.html">Language</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">englishUnitedStates</span><span class="p">,</span>
+    <span class="nv">directionsType</span><span class="p">:</span> <span class="kt"><a href="../Enums/DirectionType.html">DirectionType</a></span> <span class="o">=</span> <span class="o">.</span><span class="k">none</span><span class="p">,</span>
+    <span class="nv">format</span><span class="p">:</span> <span class="kt"><a href="../Enums/Format.html">Format</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">json</span><span class="p">,</span>
+    <span class="nv">shapeFormat</span><span class="p">:</span> <span class="kt"><a href="../Enums/ShapeFormat.html">ShapeFormat</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">bannerInstructions</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nv">voiceInstructions</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nv">alternates</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>units</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Distance units for output. Allowable unit types are miles (or mi) and kilometers (or km).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>language</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The language of the narration instructions based on the IETF BCP 47 language tag string.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>directionsType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>What should be returned for directions</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>format</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Format of the response</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shapeFormat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If <code>&quot;format&quot; : &quot;osrm&quot;</code> is set: Specifies the optional format for the path shape of each connection.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bannerInstructions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If the <code><a href="../Structs/DirectionsOptions.html#/s:13SwiftValhalla17DirectionsOptionsV6formatAA6FormatOvp">format</a></code> is <code>osrm</code>, this boolean indicates if each step should have the additional <code><a href="../Structs/DirectionsOptions.html#/s:13SwiftValhalla17DirectionsOptionsV18bannerInstructionsSbvp">bannerInstructions</a></code> attribute, which can be displayed in some navigation system SDKs.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>voiceInstructions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If the <code><a href="../Structs/DirectionsOptions.html#/s:13SwiftValhalla17DirectionsOptionsV6formatAA6FormatOvp">format</a></code> is <code>osrm</code>, this boolean indicates if each step should have the additional <code><a href="../Structs/DirectionsOptions.html#/s:13SwiftValhalla17DirectionsOptionsV17voiceInstructionsSbvp">voiceInstructions</a></code> attribute, which can be heard in some navigation system SDKs.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alternates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A number denoting how many alternate routes should be provided. There may be no alternates or less alternates than the user specifies. Alternates are not yet supported on multipoint routes (that is, routes with more than 2 locations). They are also not supported on time dependent routes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-08-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
