@@ -8,7 +8,7 @@
 import Foundation
 
 /// Represents the kind of transit stop: a simple stop or a station.
-public enum TransitStopType: Int, Codable {
+public enum TransitStopType: Int, Codable, Sendable {
     /// A simple stop (e.g., a single platform or stop sign).
     case simpleStop = 0
     /// A station with multiple platforms or facilities.

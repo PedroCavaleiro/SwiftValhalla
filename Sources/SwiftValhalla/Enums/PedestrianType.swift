@@ -13,7 +13,7 @@ import Foundation
 /// The raw value matches the exact key string used in Valhalla.
 ///
 /// Conforms to `Codable` for serialization, and `CaseIterable` for iteration.
-public enum PedestrianType: String, Codable, CaseIterable {
+public enum PedestrianType: String, Codable, CaseIterable, Sendable {
     case foot = "foot"
     case wheelchair = "wheelchair"
     case segway = "segway"

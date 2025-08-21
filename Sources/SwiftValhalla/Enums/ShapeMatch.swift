@@ -8,7 +8,7 @@
 import Foundation
 
 /// It allows some control of the matching algorithm based on the type of input.
-public enum ShapeMatch: String, Codable {
+public enum ShapeMatch: String, Codable, Sendable {
     /// Indicates an edge walking algorithm can be used. This algorithm requires nearly exact shape matching, so it should only be used when the shape is from a prior Valhalla route.
     case edgeWalk = "edge_walk"
     /// Indicates that a map-matching algorithm should be used because the input shape might not closely match Valhalla edges. This algorithm is more expensive.

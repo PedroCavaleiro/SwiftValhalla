@@ -9,7 +9,7 @@ import Foundation
 
 /// Indicates the preferred side relative to a reference (for example,
 /// which side of the road a route or asset prefers).
-public enum PreferredSide: String, Codable {
+public enum PreferredSide: String, Codable, Sendable {
     /// Prefer the same side as the reference.
     case same = "same"
     /// Prefer the opposite side from the reference.

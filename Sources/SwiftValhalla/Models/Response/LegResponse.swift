@@ -14,7 +14,7 @@ import Foundation
 ///   - maneuvers: An array of maneuvers for the leg, if present.
 ///   - summary: Summary information for the leg, if present.
 ///   - shape: Encoded polyline/string representing the leg's geometry, if present.
-public struct LegResponse: Codable {
+public struct LegResponse: Codable, Sendable {
     
     let maneuvers: [ManeuverResponse]?
     let summary: SummaryResponse?

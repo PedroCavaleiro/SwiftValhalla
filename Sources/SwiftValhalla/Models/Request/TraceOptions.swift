@@ -13,7 +13,7 @@ import Foundation
 ///   - gpsAccuracy: GPS accuracy in meters associated with supplied trace points.
 ///   - breakageDistance: Breaking distance in meters between trace points.
 ///   - interpolationDistance: Interpolation distance in meters beyond which trace points are merged together.
-public struct TraceOptions: Codable {
+public struct TraceOptions: Codable, Sendable {
     
     let searchRadius: Int?
     let gpsAccuracy: Int?

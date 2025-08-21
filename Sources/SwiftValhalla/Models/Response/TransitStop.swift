@@ -17,7 +17,7 @@ import Foundation
 ///   - assumedSchedule: Whether the times are assumed from schedule.
 ///   - latitude: Latitude of the stop.
 ///   - longitude: Longitude of the stop.
-public struct TransitStop: Codable {
+public struct TransitStop: Codable, Sendable {
     
     public let type: TransitStopType
     public let name: String

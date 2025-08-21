@@ -39,7 +39,7 @@ import Foundation
 ///   - bearingBefore: Optional bearing before the maneuver.
 ///   - bearingAfter: Optional bearing after the maneuver.
 ///   - lanes: Optional lanes metadata for the maneuver.
-public struct ManeuverResponse: Codable {
+public struct ManeuverResponse: Codable, Sendable {
     
     public let type: Int
     public let instruction: String?

@@ -15,7 +15,7 @@ typealias SideOfStreet = Sidewalk
 /// The raw value matches the exact key string used in Valhalla.
 ///
 /// Conforms to `Codable` for serialization, and `CaseIterable` for iteration.
-public enum Sidewalk: String, Codable, CaseIterable {
+public enum Sidewalk: String, Codable, CaseIterable, Sendable {
     case left = "left"
     case right = "right"
     case both = "both"

@@ -13,7 +13,7 @@ import Foundation
 /// The raw value matches the exact key string used in Valhalla.
 ///
 /// Conforms to `Codable` for serialization, and `CaseIterable` for iteration.
-public enum TransitType: String, Codable, CaseIterable {
+public enum TransitType: String, Codable, CaseIterable, Sendable {
     case tram = "tram"
     case metro = "metro"
     case rail = "rail"

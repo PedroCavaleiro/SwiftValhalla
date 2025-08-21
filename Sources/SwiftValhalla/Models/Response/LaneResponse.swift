@@ -14,7 +14,7 @@ import Foundation
 ///   - directions: The directions that the lane supports.
 ///   - active: The currently active direction(s) for the lane, if any.
 ///   - valid: The direction(s) considered valid for the maneuver, if any.
-public struct Lane: Codable {
+public struct Lane: Codable, Sendable {
     public let directions: LaneDirection
     public let active: LaneDirection?
     public let valid: LaneDirection?

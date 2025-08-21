@@ -20,7 +20,7 @@ public typealias TripResponse = RouteResponse
 ///   - summary: Optional overall route summary.
 ///   - legs: Optional array of legs for the route.
 ///   - locations: Optional array of locations associated with the route.
-public struct RouteResponse: Codable {
+public struct RouteResponse: Codable, Sendable {
     
     public let status: Int
     public let statusMessage: String
