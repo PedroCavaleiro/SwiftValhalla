@@ -8,7 +8,7 @@
 import Foundation
 
 /// Distance units for output. Allowable unit types are miles (or mi) and kilometers (or km). If no unit type is specified, the units default to kilometers.
-public enum Unit: String, Codable {
+public enum Unit: String, Codable, Sendable {
     
     case miles = "mi"
     case kilometers = "km"

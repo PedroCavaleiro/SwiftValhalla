@@ -9,7 +9,7 @@ import Foundation
 
 /// Specifies the optional format for the path shape of each connection
 /// - Note: Only if `format` is set to `osrm`
-public enum ShapeFormat: String, Codable {
+public enum ShapeFormat: String, Codable, Sendable {
     case polyline6 = "polyline6"
     case polyline5 = "polyline5"
     case geoJson = "geojson"

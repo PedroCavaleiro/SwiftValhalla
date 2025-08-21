@@ -16,7 +16,7 @@ import Foundation
 ///
 /// Conformance to `Codable` makes it easy to serialize and deserialize filters,
 /// and `CaseIterable` allows iteration over all supported filters.
-public enum Filter: String, Codable, CaseIterable {
+public enum Filter: String, Codable, CaseIterable, Sendable {
     /// List of names
     case edgeNames = "edge.names"
     /// The matched edge length in the units specified (default is kilometers). If `source_percent_along` and/or `target_percent_along are present, this represents the partially matched edge length, otherwise the full edge length.
