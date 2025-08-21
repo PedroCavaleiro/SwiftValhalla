@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MapMatchingRequest Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/MapMatchingRequest" class="dashAnchor"></a>
+    <a title="MapMatchingRequest Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Structs.html">Structures</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SwiftValhalla.MapMatchingRequest Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SwiftValhalla.html">SwiftValhalla</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BicycleType.html">BicycleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CostingModel.html">CostingModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DirectionType.html">DirectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Driveability.html">Driveability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Filter.html">Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FlowSpeeds.html">FlowSpeeds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Format.html">Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Language.html">Language</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ManeuverType.html">ManeuverType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType.html">MatchType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NodeType.html">NodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PedestrianType.html">PedestrianType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferredSide.html">PreferredSide</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RoadClass.html">RoadClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SacScale.html">SacScale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeFormat.html">ShapeFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeMatch.html">ShapeMatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Sidewalk.html">Sidewalk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Surface.html">Surface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TraceType.html">TraceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitStopType.html">TransitStopType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitType.html">TransitType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelMode.html">TravelMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelType.html">TravelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Unit.html">Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Use.html">Use</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VehicleType.html">VehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/DirectionsOptions.html">DirectionsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Lane.html">Lane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LaneDirection.html">LaneDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla11LegResponseV">LegResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla8LocationV">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverResponse.html">ManeuverResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverSignElement.html">ManeuverSignElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RouteResponse.html">RouteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13SwiftValhalla12SearchFilterV">SearchFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignResponse.html">SignResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SummaryResponse.html">SummaryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceOptions.html">TraceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitInfo.html">TransitInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitStop.html">TransitStop</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Cyclabilitya">Cyclability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla14Traversabilitya">Traversability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12TripResponsea">TripResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Walkabilitya">Walkability</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MapMatchingRequest</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MapMatchingRequest</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>The structure for the Map Matching request</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Although <code>shape</code> and <code>encodedPolyline</code> are optional one of them must be provided otherwise a <code>fatalError</code> will be thrown. If both are provided <code>shape</code> will take precedence.</p>
+
+</div>
+
+              <div>
+                <h4>Parameters</h4>
+                <table class="graybox">
+                  <tbody>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>shape</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>The shape to match</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>encodedPolyline</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>The polyline to match</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>shapeMatch</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Allows some control of the matching algorithm based on the type of input.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>costing</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Valhalla Map Matching can use any costing model available in the Valhalla route service</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>useTimestamps</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>A boolean value indicating whether the input timestamps or durations should be used when computing elapsed time at each edge along the matched path. If true, timestamps are used. If false (default), internal costing is applied to compute elapsed times.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>directionsOptions</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Specify units, language, and whether or not to return directions in a narrative form.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>traceOptions</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Trace options to improve results</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>beginTime</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Begin timestamp for the trace. This is used along with the <code>durations</code> so that timestamps can be specified for a trace that is specified using an encoded polyline.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>durations</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>List of durations (seconds) between each successive pair of input trace points. This allows trace points to be supplied as an encoded polyline and timestamps to be created by using this list of &ldquo;delta&rdquo; times along with the <code>beginTime</code> of the trace.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>filters</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>The trace attributes filters for this request</p>
+                          </div>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla18MapMatchingRequestV5shape15encodedPolyline0F5Match7costing13useTimestamps17directionsOptions05traceN09beginTime9durations7filtersACSayAA8LocationVGSg_SSSgAA05ShapeI0OAA12CostingModelOSbAA010DirectionsN0VSgAA05TraceN0VSgSiSgSaySiGSgAA0Y16AttributesFilterVSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(shape:encodedPolyline:shapeMatch:costing:useTimestamps:directionsOptions:traceOptions:beginTime:durations:filters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla18MapMatchingRequestV5shape15encodedPolyline0F5Match7costing13useTimestamps17directionsOptions05traceN09beginTime9durations7filtersACSayAA8LocationVGSg_SSSgAA05ShapeI0OAA12CostingModelOSbAA010DirectionsN0VSgAA05TraceN0VSgSiSgSaySiGSgAA0Y16AttributesFilterVSgtcfc">init(shape:<wbr>encodedPolyline:<wbr>shapeMatch:<wbr>costing:<wbr>useTimestamps:<wbr>directionsOptions:<wbr>traceOptions:<wbr>beginTime:<wbr>durations:<wbr>filters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The structure for the Map Matching request</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Although <code>shape</code> and <code>encodedPolyline</code> are optional one of them must be provided otherwise a <code>fatalError</code> will be thrown. If both are provided <code>shape</code> will take precedence.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">shape</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs.html#/s:13SwiftValhalla8LocationV">Location</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">encodedPolyline</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">shapeMatch</span><span class="p">:</span> <span class="kt"><a href="../Enums/ShapeMatch.html">ShapeMatch</a></span> <span class="o">=</span> <span class="kt"><a href="../Enums/ShapeMatch.html">ShapeMatch</a></span><span class="o">.</span><span class="n">walkOrSnap</span><span class="p">,</span>
+    <span class="nv">costing</span><span class="p">:</span> <span class="kt"><a href="../Enums/CostingModel.html">CostingModel</a></span> <span class="o">=</span> <span class="kt"><a href="../Enums/CostingModel.html">CostingModel</a></span><span class="o">.</span><span class="n">auto</span><span class="p">,</span>
+    <span class="nv">useTimestamps</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">directionsOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/DirectionsOptions.html">DirectionsOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">traceOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/TraceOptions.html">TraceOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">beginTime</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">durations</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">filters</span><span class="p">:</span> <span class="kt"><a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shape</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The shape to match</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>encodedPolyline</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The polyline to match</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shapeMatch</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows some control of the matching algorithm based on the type of input.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Valhalla Map Matching can use any costing model available in the Valhalla route service</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>useTimestamps</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A boolean value indicating whether the input timestamps or durations should be used when computing elapsed time at each edge along the matched path. If true, timestamps are used. If false (default), internal costing is applied to compute elapsed times.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>traceOptions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Options to improve results</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>beginTime</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Begin timestamp for the trace. This is used along with the <code>durations</code> so that timestamps can be specified for a trace that is specified using an encoded polyline.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>durations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of durations (seconds) between each successive pair of input trace points. This allows trace points to be supplied as an encoded polyline and timestamps to be created by using this list of &ldquo;delta&rdquo; times along with the <code>beginTime</code> of the trace.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The trace attributes filters for this request</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-08-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
