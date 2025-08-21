@@ -24,7 +24,7 @@ import Foundation
 ///   - maximumLatitude: Maximum latitude of the route bounding box.
 ///   - maximumLongitude: Maximum longitude of the route bounding box.
 ///   - cost: Cost metric for the route.
-public struct SummaryResponse: Codable {
+public struct SummaryResponse: Codable, Sendable {
     
     public let time: Double
     public let length: Double

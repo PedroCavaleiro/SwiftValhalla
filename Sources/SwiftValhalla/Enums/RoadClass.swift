@@ -8,7 +8,7 @@
 import Foundation
 
 /// Classification of roads by importance or hierarchy used in routing.
-public enum RoadClass: String, Codable {
+public enum RoadClass: String, Codable, Sendable {
     case motorway = "motorway"
     case trunk = "trunk"
     case primary = "primary"

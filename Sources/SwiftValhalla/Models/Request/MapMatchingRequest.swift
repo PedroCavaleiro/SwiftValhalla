@@ -21,7 +21,7 @@ import Foundation
 ///   - filters: The trace attributes filters for this request
 ///
 /// - Note: Although `shape` and `encodedPolyline` are optional one of them must be provided otherwise a `fatalError` will be thrown. If both are provided `shape` will take precedence.
-public struct MapMatchingRequest: Codable {
+public struct MapMatchingRequest: Codable, Sendable {
     
     let shape: [Location]?
     let encodedPolyline: String?

@@ -23,7 +23,7 @@ import MapKit
 ///     Defaults to `1.0 / 1e6`, which corresponds to six decimal places of precision.
 /// - Returns: An array of `CLLocationCoordinate2D` objects representing the decoded path,
 ///   ordered in the sequence they appear in the encoded string.
-internal func decode(_ encoded: String, precision: Double = 1.0/1e6) -> [CLLocationCoordinate2D] {
+internal func decodePolylineShape(_ encoded: String, precision: Double = 1.0/1e6) -> [CLLocationCoordinate2D] {
     var decoded: [CLLocationCoordinate2D] = []
     var previous: [Int] = [0, 0]
     var i = encoded.startIndex

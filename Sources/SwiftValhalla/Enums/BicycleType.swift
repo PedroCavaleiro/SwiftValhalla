@@ -13,7 +13,7 @@ import Foundation
 /// The raw value matches the exact key string used in Valhalla.
 ///
 /// Conforms to `Codable` for serialization, and `CaseIterable` for iteration.
-public enum BicycleType: String, Codable, CaseIterable {
+public enum BicycleType: String, Codable, CaseIterable, Sendable {
     case road = "road"
     case cross = "cross"
     case hybrid = "hybrid"

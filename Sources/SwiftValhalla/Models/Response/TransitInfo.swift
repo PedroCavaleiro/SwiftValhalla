@@ -22,7 +22,7 @@ import Foundation
 ///   - operatorName: Operator human-readable name.
 ///   - operatorUrl: Operator website URL.
 ///   - transitStops: Array of stops for this transit route.
-public struct TransitInfo: Codable {
+public struct TransitInfo: Codable, Sendable {
     
     public let onestopId: String
     public let shortName: String

@@ -8,7 +8,7 @@
 import Foundation
 
 /// Run-time costing model for route path generation.
-public enum CostingModel: String, Codable {
+public enum CostingModel: String, Codable, Sendable {
     /// Standard costing for driving routes by car, motorcycle, truck, and so on that obeys automobile driving rules, such as access and turn restrictions. Auto provides a short time path (though not guaranteed to be shortest time) and uses intersection costing to minimize turns and maneuvers or road name changes. Routes also tend to favor highways and higher classification roads, such as motorways and trunks.
     case auto = "auto"
     /// Standard costing for travel by bicycle, with a slight preference for using cycleways or roads with bicycle lanes. Bicycle routes follow regular roads when needed, but avoid roads without bicycle access.

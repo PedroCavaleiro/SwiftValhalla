@@ -17,7 +17,7 @@ import Foundation
 ///   - bannerInstructions: If the `format` is `osrm`, this boolean indicates if each step should have the additional `bannerInstructions` attribute, which can be displayed in some navigation system SDKs.
 ///   - voiceInstructions: If the `format` is `osrm`, this boolean indicates if each step should have the additional `voiceInstructions` attribute, which can be heard in some navigation system SDKs.
 ///   - alternates: A number denoting how many alternate routes should be provided. There may be no alternates or less alternates than the user specifies. Alternates are not yet supported on multipoint routes (that is, routes with more than 2 locations). They are also not supported on time dependent routes.
-public struct DirectionsOptions: Codable {
+public struct DirectionsOptions: Codable, Sendable {
     
     public let units: Unit
     public let language: Language

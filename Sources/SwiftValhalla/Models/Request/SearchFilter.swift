@@ -17,7 +17,7 @@ import Foundation
 ///   - excludeClosures: Whether to exclude roads considered closed due to live traffic closure
 ///   - minRoadClass: Lowest road class allowed
 ///   - maxRoadClass: Highest road class allowed
-public struct SearchFilter: Codable {
+public struct SearchFilter: Codable, Sendable {
     
     let excludeTunnel: Bool
     let excludeBridge: Bool

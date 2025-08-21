@@ -11,7 +11,7 @@ import Foundation
 /// - Parameters:
 ///   - action: Sets the filter to include or exclude the defined attributes
 ///   - attributes: The attributes to include or exclude
-public struct TraceAttributesFilter: Codable {
+public struct TraceAttributesFilter: Codable, Sendable {
     
     let action: Action
     let attributes: [Filter]

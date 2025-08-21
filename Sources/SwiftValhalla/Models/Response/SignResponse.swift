@@ -15,7 +15,7 @@ import Foundation
 ///   - exitBranchElements: Elements representing exit branches.
 ///   - exitTowardElements: Elements representing exit toward indicators.
 ///   - exitNameElements: Elements representing exit names.
-public struct SignResponse: Codable {
+public struct SignResponse: Codable, Sendable {
     public let exitNumberElements: [ManeuverSignElement]?
     public let exitBranchElements: [ManeuverSignElement]?
     public let exitTowardElements: [ManeuverSignElement]?
@@ -34,7 +34,7 @@ public struct SignResponse: Codable {
 /// - Parameters:
 ///   - text: The sign text.
 ///   - consecutiveCount: Number of consecutive occurrences for the element.
-public struct ManeuverSignElement: Codable {
+public struct ManeuverSignElement: Codable, Sendable {
     public let text: String
     public let consecutiveCount: Int
     
