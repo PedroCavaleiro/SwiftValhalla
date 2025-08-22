@@ -75,10 +75,10 @@ public struct ManeuverResponse: Codable, Sendable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.type = try container.decode(Int.self, forKey: .type)
         self.instruction = try container.decodeIfPresent(String.self, forKey: .instruction)
-        self.verbalSuccinctTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalSuccinctTransitionInstruction)
-        self.verbalPreTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalPreTransitionInstruction)
-        self.verbalPostTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalPostTransitionInstruction)
-        self.verbalTransitionAlertInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalTransitionAlertInstruction)
+        self.verbalSuccinctTransitionInstruction = try container.decodeIfPresent(String.self, forKey: .verbalSuccinctTransitionInstruction)
+        self.verbalPreTransitionInstruction = try container.decodeIfPresent(String.self, forKey: .verbalPreTransitionInstruction)
+        self.verbalPostTransitionInstruction = try container.decodeIfPresent(String.self, forKey: .verbalPostTransitionInstruction)
+        self.verbalTransitionAlertInstruction = try container.decodeIfPresent(String.self, forKey: .verbalTransitionAlertInstruction)
         self.streetNames = try container.decodeIfPresent([String].self, forKey: .streetNames)
         self.bearingBefore = try container.decodeIfPresent(Int.self, forKey: .bearingBefore)
         self.bearingAfter = try container.decodeIfPresent(Int.self, forKey: .bearingAfter)
@@ -87,12 +87,12 @@ public struct ManeuverResponse: Codable, Sendable {
         self.cost = try container.decode(Double.self, forKey: .cost)
         self.beginShapeIndex = try container.decode(Int.self, forKey: .beginShapeIndex)
         self.endShapeIndex = try container.decode(Int.self, forKey: .endShapeIndex)
-        self.verbalMultiCue = (try? container.decodeIfPresent(Bool.self, forKey: .verbalMultiCue)) ?? false
+        self.verbalMultiCue = try container.decodeIfPresent(Bool.self, forKey: .verbalMultiCue) ?? false
         self.travelMode = try container.decode(TravelMode.self, forKey: .travelMode)
         self.beginStreetNames = try container.decodeIfPresent(String.self, forKey: .beginStreetNames)
-        self.toll = (try? container.decodeIfPresent(Bool.self, forKey: .toll)) ?? false
-        self.highway = (try? container.decodeIfPresent(Bool.self, forKey: .highway)) ?? false
-        self.ferry = (try? container.decodeIfPresent(Bool.self, forKey: .ferry)) ?? false
+        self.toll = try container.decodeIfPresent(Bool.self, forKey: .toll) ?? false
+        self.highway = try container.decodeIfPresent(Bool.self, forKey: .highway) ?? false
+        self.ferry = try container.decodeIfPresent(Bool.self, forKey: .ferry) ?? false
         self.sign = try container.decodeIfPresent(SignResponse.self, forKey: .sign)
         self.roundaboutExitCount = try container.decodeIfPresent(Int.self, forKey: .roundaboutExitCount)
         self.departInstruction = try container.decodeIfPresent(String.self, forKey: .departInstruction)
@@ -100,7 +100,7 @@ public struct ManeuverResponse: Codable, Sendable {
         self.arriveInstruction = try container.decodeIfPresent(String.self, forKey: .arriveInstruction)
         self.verbalArriveInstruction = try container.decodeIfPresent(String.self, forKey: .verbalArriveInstruction)
         self.transitInfo = try container.decodeIfPresent(TransitInfo.self, forKey: .transitInfo)
-        self.lanes = (try? container.decodeIfPresent([Lane].self, forKey: .lanes)) ?? []
+        self.lanes = try container.decodeIfPresent([Lane].self, forKey: .lanes)  // Fixed: Keep as optional
         
         switch travelMode {
         case .drive:
