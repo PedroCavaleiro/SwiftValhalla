@@ -52,9 +52,13 @@ public class SwiftValhalla {
     ///     // Handle SwiftlyRestError
     /// }
     /// ```
-    public func mapMatching(_ data: MapMatchingRequest) async -> Result<MapMatchingResponse, SwiftlyRestError> {
+    public func mapMatching(_ data: MapMatchingRequest) async throws -> Result<MapMatchingResponse, SwiftlyRestError> {
+        guard let restClient = self.restClient else {
+            throw NSError(domain: "SwiftValhalla", code: 1002, userInfo: [NSLocalizedDescriptionKey : "Rest client not configured"])
+        }
+        
         let endpoint = Endpoint().withController("trace_route")
-        let response: MapMatchingCall = await SwiftlyRest.shared.post(endpoint, body: data)
+        let response: MapMatchingCall = await restClient.post(endpoint, body: data)
         return response
     }
     
