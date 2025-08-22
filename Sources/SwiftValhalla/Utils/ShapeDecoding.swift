@@ -23,44 +23,41 @@ import MapKit
 ///     Defaults to `1.0 / 1e6`, which corresponds to six decimal places of precision.
 /// - Returns: An array of `CLLocationCoordinate2D` objects representing the decoded path,
 ///   ordered in the sequence they appear in the encoded string.
-internal func decodePolylineShape(_ encoded: String, precision: Double = 1.0/1e6) -> [CLLocationCoordinate2D] {
+internal func decodePolylineShape(_ encoded: String, precision: Double = 1e-6) -> [CLLocationCoordinate2D] {
     var decoded: [CLLocationCoordinate2D] = []
-    var previous: [Int] = [0, 0]
+    var previous = (lat: 0, lon: 0)
     var i = encoded.startIndex
     
     while i < encoded.endIndex {
-        var ll: [Int] = [0, 0]
+        var coord = (lat: 0, lon: 0)
         
         for j in 0...1 {
             var shift = 0
-            var byte = 0x20
+            var result = 0
+            var byte: Int
             
-            while byte >= 0x20 {
-                let scalar = encoded[i].unicodeScalars.first!.value
-                byte = Int(scalar) - 63
+            repeat {
+                byte = Int(encoded[i].asciiValue!) - 63
                 i = encoded.index(after: i)
-                
-                ll[j] |= (byte & 0x1f) << shift
+                result |= (byte & 0x1f) << shift
                 shift += 5
-            }
-                        
-            if (ll[j] & 1) != 0 {
-                ll[j] = previous[j] + ~(ll[j] >> 1)
-            } else {
-                ll[j] = previous[j] + (ll[j] >> 1)
-            }
+            } while byte >= 0x20
             
-            previous[j] = ll[j]
+            let delta = (result & 1) != 0 ? ~(result >> 1) : (result >> 1)
+            if j == 0 {
+                coord.lat = previous.lat + delta
+                previous.lat = coord.lat
+            } else {
+                coord.lon = previous.lon + delta
+                previous.lon = coord.lon
+            }
         }
         
-        let lon = Double(ll[1]) * precision
-        let lat = Double(ll[0]) * precision
-        
-        let lonRounded = Double(String(format: "%.6f", lon)) ?? lon
-        let latRounded = Double(String(format: "%.6f", lat)) ?? lat
-        
-        decoded.append(CLLocationCoordinate2D(latitude: latRounded, longitude: lonRounded))
+        let lat = Double(coord.lat) * precision
+        let lon = Double(coord.lon) * precision
+        decoded.append(CLLocationCoordinate2D(latitude: lat, longitude: lon))
     }
     
     return decoded
 }
+
