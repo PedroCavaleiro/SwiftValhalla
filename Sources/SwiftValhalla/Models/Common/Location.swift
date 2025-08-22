@@ -102,7 +102,7 @@ public struct Location: Codable, Sendable {
     ///   - phone: Telephone number.
     ///   - url: URL for the place or location
     ///   - waiting: The waiting time in seconds at this location. E.g. when the route describes a pizza delivery tour, each location has a service time, which can be respected by setting `waiting` on the location, then the departure will be delayed by this amount in seconds. Only works for `break` or `break_through types.
-    init(
+    public init(
         latitude: Double,
         longitude: Double,
         timestamp: Int64,
