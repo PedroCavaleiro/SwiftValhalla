@@ -26,17 +26,17 @@ import Foundation
 ///   - cost: Cost metric for the route.
 public struct SummaryResponse: Codable, Sendable {
     
-    public let time: Double
-    public let length: Double
-    public let hasToll: Bool
-    public let hasFerry: Bool
-    public let hasHighway: Bool
-    public let hasTimeRestrictions: Bool
-    public let minimumLatitude: Double
-    public let minimumLongitude: Double
-    public let maximumLatitude: Double
-    public let maximumLongitude: Double
-    public let cost: Double
+    public let time: Double?          // Made optional
+    public let length: Double?        // Made optional
+    public let hasToll: Bool?         // Made optional
+    public let hasFerry: Bool?        // Made optional
+    public let hasHighway: Bool?      // Made optional
+    public let hasTimeRestrictions: Bool?  // Made optional
+    public let minimumLatitude: Double?    // Made optional
+    public let minimumLongitude: Double?   // Made optional
+    public let maximumLatitude: Double?    // Made optional
+    public let maximumLongitude: Double?   // Made optional
+    public let cost: Double           // Keep as required
     
     enum CodingKeys: String, CodingKey {
         case time = "time"

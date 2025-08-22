@@ -46,7 +46,8 @@ public struct ManeuverResponse: Codable, Sendable {
     public let verbalSuccinctTransitionInstruction: String?
     public let verbalPreTransitionInstruction: String?
     public let verbalPostTransitionInstruction: String?
-    public let streetNames: [String]
+    public let verbalTransitionAlertInstruction: String?  // Added missing field
+    public let streetNames: [String]?  // Changed from [String] to [String]? to make optional
     public let time: Double
     public let length: Double
     public let cost: Double
@@ -77,7 +78,8 @@ public struct ManeuverResponse: Codable, Sendable {
         self.verbalSuccinctTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalSuccinctTransitionInstruction)
         self.verbalPreTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalPreTransitionInstruction)
         self.verbalPostTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalPostTransitionInstruction)
-        self.streetNames = try container.decode([String].self, forKey: .streetNames)
+        self.verbalTransitionAlertInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalTransitionAlertInstruction)
+        self.streetNames = try container.decodeIfPresent([String].self, forKey: .streetNames)
         self.bearingBefore = try container.decodeIfPresent(Int.self, forKey: .bearingBefore)
         self.bearingAfter = try container.decodeIfPresent(Int.self, forKey: .bearingAfter)
         self.time = try container.decode(Double.self, forKey: .time)
@@ -122,6 +124,7 @@ public struct ManeuverResponse: Codable, Sendable {
         case verbalSuccinctTransitionInstruction = "verbal_succinct_transition_instruction"
         case verbalPreTransitionInstruction = "verbal_pre_transition_instruction"
         case verbalPostTransitionInstruction = "verbal_post_transition_instruction"
+        case verbalTransitionAlertInstruction = "verbal_transition_alert_instruction"
         case streetNames = "street_names"
         case bearingAfter = "bearing_after"
         case time = "time"

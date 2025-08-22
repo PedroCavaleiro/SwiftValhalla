@@ -43,7 +43,7 @@ public struct Location: Codable, Sendable {
     
     public let latitude: Double
     public let longitude: Double
-    public let timestamp: Int?
+    public let timestamp: String?  // Changed from Int? to String? to match JSON format
     public let traceType: TraceType?
     public let heading: Int?
     public let headingTolerance: Int?
@@ -61,7 +61,6 @@ public struct Location: Codable, Sendable {
     public let streetSideMaxDistance: Int?
     public let streetSideCutOff: RoadClass?
     public let searchFilter: SearchFilter?
-    public let dateTime: Date?
     public let name: String?
     public let city: String?
     public let state: String?
@@ -106,8 +105,8 @@ public struct Location: Codable, Sendable {
     public init(
         latitude: Double,
         longitude: Double,
-        timestamp: Int64? = nil,
-        traceType: TraceType = .´break´,
+        timestamp: String? = nil,  // Changed from Int64? to String?
+        traceType: TraceType = .`break`,  // Fixed backticks
         heading: Int? = nil,
         headingTolerance: Int? = nil,
         street: Int? = nil,
@@ -136,7 +135,7 @@ public struct Location: Codable, Sendable {
     ) {
         self.latitude = latitude
         self.longitude = longitude
-        self.timestamp = timestamp.map { Int(Double($0) / 1000.0) }
+        self.timestamp = timestamp  // Direct assignment since both are String?
         self.traceType = traceType
         self.heading = heading
         self.headingTolerance = headingTolerance
@@ -152,7 +151,6 @@ public struct Location: Codable, Sendable {
         self.streetSideMaxDistance = streetSideMaxDistance
         self.streetSideCutOff = streetSideCutOff
         self.searchFilter = searchFilter
-        self.dateTime = nil
         self.name = name
         self.city = city
         self.state = state
@@ -176,7 +174,7 @@ public struct Location: Codable, Sendable {
     enum CodingKeys: String, CodingKey {
         case latitude = "lat"
         case longitude = "lon"
-        case timestamp = "time"
+        case timestamp = "date_time"  // Fixed: JSON uses "date_time" not "time"
         case traceType = "type"
         case heading
         case headingTolerance = "heading_tolerance"
@@ -194,7 +192,6 @@ public struct Location: Codable, Sendable {
         case streetSideMaxDistance = "street_side_max_distance"
         case streetSideCutOff = "street_side_cutoff"
         case searchFilter = "search_filter"
-        case dateTime = "date_time"
         case name = "name"
         case city = "city"
         case state = "state"
