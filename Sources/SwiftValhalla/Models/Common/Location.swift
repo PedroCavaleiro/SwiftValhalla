@@ -41,36 +41,36 @@ import Foundation
 ///   - sideOfStreet: **(response only)** The side of street of a `break` `location` that is determined based on the actual route when the `location` is offset from the street. The possible values are `left` and `right`.
 public struct Location: Codable, Sendable {
     
-    let latitude: Double
-    let longitude: Double
-    let timestamp: Int
-    let traceType: TraceType
-    let heading: Int?
-    let headingTolerance: Int?
-    let street: Int?
-    let wayId: Int?
-    let minimumReachability: Int
-    let radius: Int
-    let rankCandidates: Bool
-    let preferredSide: PreferredSide
-    let displayLatitude: Double?
-    let displayLongitude: Double?
-    let searchCutoff: Int?
-    let nodeSnapTolerance: Int
-    let streetSideTolerance: Int
-    let streetSideMaxDistance: Int
-    let streetSideCutOff: RoadClass?
-    let searchFilter: SearchFilter?
-    let dateTime: Date?
-    let name: String?
-    let city: String?
-    let state: String?
-    let postalCode: String?
-    let country: String?
-    let phone: String?
-    let url: String?
-    let waiting: Int?
-    let sideOfStreet: SideOfStreet?
+    public let latitude: Double
+    public let longitude: Double
+    public let timestamp: Int
+    public let traceType: TraceType
+    public let heading: Int?
+    public let headingTolerance: Int?
+    public let street: Int?
+    public let wayId: Int?
+    public let minimumReachability: Int
+    public let radius: Int
+    public let rankCandidates: Bool
+    public let preferredSide: PreferredSide
+    public let displayLatitude: Double?
+    public let displayLongitude: Double?
+    public let searchCutoff: Int?
+    public let nodeSnapTolerance: Int
+    public let streetSideTolerance: Int
+    public let streetSideMaxDistance: Int
+    public let streetSideCutOff: RoadClass?
+    public let searchFilter: SearchFilter?
+    public let dateTime: Date?
+    public let name: String?
+    public let city: String?
+    public let state: String?
+    public let postalCode: String?
+    public let country: String?
+    public let phone: String?
+    public let url: String?
+    public let waiting: Int?
+    public let sideOfStreet: SideOfStreet?
     
     /// Initializer
     /// - Parameters:

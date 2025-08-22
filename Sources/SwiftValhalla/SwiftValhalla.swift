@@ -56,12 +56,7 @@ public class SwiftValhalla {
     public func mapMatching(_ data: MapMatchingRequest) async -> Result<MapMatchingResponse, SwiftlyRestError> {
         let endpoint = Endpoint().withController("trace_route")
         let response: MapMatchingCall = await SwiftlyRest.shared.post(endpoint, body: data)
-        switch response {
-        case .success(let data):
-            return .success(data)
-        case .failure(let error):
-            return .failure(error)
-        }
+        return response
     }
     
 }

@@ -16,8 +16,8 @@ import Foundation
 ///   - shape: Encoded polyline/string representing the leg's geometry, if present.
 public struct LegResponse: Codable, Sendable {
     
-    let maneuvers: [ManeuverResponse]?
-    let summary: SummaryResponse?
-    let shape: String?
+    public let maneuvers: [ManeuverResponse]?
+    public let summary: SummaryResponse?
+    public let shape: String?
     
 }

@@ -15,10 +15,10 @@ import Foundation
 ///   - interpolationDistance: Interpolation distance in meters beyond which trace points are merged together.
 public struct TraceOptions: Codable, Sendable {
     
-    let searchRadius: Int?
-    let gpsAccuracy: Int?
-    let breakageDistance: Int?
-    let interpolationDistance: Int?
+    public let searchRadius: Int?
+    public let gpsAccuracy: Int?
+    public let breakageDistance: Int?
+    public let interpolationDistance: Int?
     
     /// Initializer
     /// - Parameters:

@@ -23,16 +23,16 @@ import Foundation
 /// - Note: Although `shape` and `encodedPolyline` are optional one of them must be provided otherwise a `fatalError` will be thrown. If both are provided `shape` will take precedence.
 public struct MapMatchingRequest: Codable, Sendable {
     
-    let shape: [Location]?
-    let encodedPolyline: String?
-    let shapeMatch: ShapeMatch
-    let costing: CostingModel
-    let useTimestamps: Bool
-    let directionsOptions: DirectionsOptions?
-    let traceOptions: TraceOptions?
-    let beginTime: Int?
-    let durations: [Int]?
-    let filters: TraceAttributesFilter?
+    public let shape: [Location]?
+    public let encodedPolyline: String?
+    public let shapeMatch: ShapeMatch
+    public let costing: CostingModel
+    public let useTimestamps: Bool
+    public let directionsOptions: DirectionsOptions?
+    public let traceOptions: TraceOptions?
+    public let beginTime: Int?
+    public let durations: [Int]?
+    public let filters: TraceAttributesFilter?
     
     /// The structure for the Map Matching request
     /// - Parameters:

@@ -10,7 +10,7 @@ import MapKit
 
 extension LegResponse {
     
-    var coordinates: [CLLocationCoordinate2D] {
+    public var coordinates: [CLLocationCoordinate2D] {
         guard let shape = self.shape else { return [] }
         return decodePolylineShape(shape, precision: 6)
     }
