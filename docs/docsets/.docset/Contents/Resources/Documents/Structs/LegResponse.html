@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Action Enumeration Reference</title>
+    <title>LegResponse Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/Action" class="dashAnchor"></a>
-    <a title="Action Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/LegResponse" class="dashAnchor"></a>
+    <a title="LegResponse Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,9 +29,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">Index</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../Enums.html">Enumerations</a>
+        <a href="../Structs.html">Structures</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SwiftValhalla.Action Enumeration Reference
+        SwiftValhalla.LegResponse Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -221,17 +221,60 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Action</h1>
+            <h1>LegResponse</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Action</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LegResponse</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
-            <p>Indicates whether an item should be included or excluded when applying
-filters or similar operations.</p>
+            <p>Represents a single leg within a route, containing its maneuvers,
+an optional summary, and an optional encoded shape.</p>
 
+              <div>
+                <h4>Parameters</h4>
+                <table class="graybox">
+                  <tbody>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>maneuvers</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>An array of maneuvers for the leg, if present.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>summary</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Summary information for the leg, if present.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>shape</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Encoded polyline/string representing the leg&rsquo;s geometry, if present.</p>
+                          </div>
+                        </td>
+                      </tr>
+                  </tbody>
+                </table>
+              </div>
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -239,9 +282,9 @@ filters or similar operations.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhalla6ActionO7includeyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/include" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla6ActionO7includeyA2CmF">include</a>
+                    <a name="/s:13SwiftValhalla11LegResponseV9maneuversSayAA08ManeuverD0VGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/maneuvers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla11LegResponseV9maneuversSayAA08ManeuverD0VGSgvp">maneuvers</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -249,14 +292,13 @@ filters or similar operations.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Include the item when applying the filter.</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">include</span> <span class="o">=</span> <span class="s">"include"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">maneuvers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ManeuverResponse.html">ManeuverResponse</a></span><span class="p">]?</span></code></pre>
 
                         </div>
                       </div>
@@ -266,9 +308,9 @@ filters or similar operations.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhalla6ActionO7excludeyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/exclude" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla6ActionO7excludeyA2CmF">exclude</a>
+                    <a name="/s:13SwiftValhalla11LegResponseV7summaryAA07SummaryD0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/summary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla11LegResponseV7summaryAA07SummaryD0VSgvp">summary</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -276,16 +318,123 @@ filters or similar operations.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Exclude the item when applying the filter.</p>
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">summary</span><span class="p">:</span> <span class="kt"><a href="../Structs/SummaryResponse.html">SummaryResponse</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla11LegResponseV5shapeSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/shape" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla11LegResponseV5shapeSSSgvp">shape</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">shape</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla11LegResponseV14getCoordinates9precisionSaySo22CLLocationCoordinate2DVGSd_tF"></a>
+                    <a name="//apple_ref/swift/Method/getCoordinates(precision:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla11LegResponseV14getCoordinates9precisionSaySo22CLLocationCoordinate2DVGSd_tF">getCoordinates(precision:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the coordinates from a shape allowing a custom precision</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">exclude</span> <span class="o">=</span> <span class="s">"exclude"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCoordinates</span><span class="p">(</span><span class="nv">precision</span><span class="p">:</span> <span class="kt">Double</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>precision</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The precision of the coordinates defaulting to 1e-6</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A array of CLLocationCoordinate2D</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla11LegResponseV11coordinatesSaySo22CLLocationCoordinate2DVGvp"></a>
+                    <a name="//apple_ref/swift/Property/coordinates" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla11LegResponseV11coordinatesSaySo22CLLocationCoordinate2DVGvp">coordinates</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the coordinates from a shape with the default precision
+This is a computed variable instead of a function for improved performance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">coordinates</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocationCoordinate2D</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A array of CLLocationCoordinate2D</p>
                       </div>
                     </section>
                   </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Action Enumeration Reference</title>
+    <title>AlternateResponse Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/Action" class="dashAnchor"></a>
-    <a title="Action Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Struct/AlternateResponse" class="dashAnchor"></a>
+    <a title="AlternateResponse Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -29,9 +29,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">Index</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        <a href="../Enums.html">Enumerations</a>
+        <a href="../Structs.html">Structures</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SwiftValhalla.Action Enumeration Reference
+        SwiftValhalla.AlternateResponse Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -221,16 +221,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Action</h1>
+            <h1>AlternateResponse</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Action</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AlternateResponse</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
-            <p>Indicates whether an item should be included or excluded when applying
-filters or similar operations.</p>
+            <p>Represents an alternate route option in the map matching response.</p>
 
           </section>
           <section class="section task-group-section">
@@ -239,9 +238,9 @@ filters or similar operations.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhalla6ActionO7includeyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/include" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla6ActionO7includeyA2CmF">include</a>
+                    <a name="/s:13SwiftValhalla17AlternateResponseV4tripAA05RouteD0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/trip" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17AlternateResponseV4tripAA05RouteD0Vvp">trip</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -249,41 +248,13 @@ filters or similar operations.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Include the item when applying the filter.</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">include</span> <span class="o">=</span> <span class="s">"include"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:13SwiftValhalla6ActionO7excludeyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/exclude" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla6ActionO7excludeyA2CmF">exclude</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Exclude the item when applying the filter.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">exclude</span> <span class="o">=</span> <span class="s">"exclude"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">trip</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:13SwiftValhalla12TripResponsea">TripResponse</a></span></code></pre>
 
                         </div>
                       </div>
