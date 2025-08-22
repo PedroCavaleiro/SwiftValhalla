@@ -13,8 +13,8 @@ import Foundation
 ///   - attributes: The attributes to include or exclude
 public struct TraceAttributesFilter: Codable, Sendable {
     
-    let action: Action
-    let attributes: [Filter]
+    public let action: Action
+    public let attributes: [Filter]
     
     /// Initializer:
     /// - Parameters:

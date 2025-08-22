@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias SideOfStreet = Sidewalk
+public typealias SideOfStreet = Sidewalk
 
 /// Represents the presence and location of sidewalks for edges in Valhalla routing.
 ///

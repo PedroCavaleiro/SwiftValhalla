@@ -8,7 +8,7 @@
 import Foundation
 import SwiftlyRest
 
-internal typealias MapMatchingCall = Result<MapMatchingResponse, SwiftlyRestError>
+public typealias MapMatchingCall = Result<MapMatchingResponse, SwiftlyRestError>
 
 /// Represents the response for a map matching request.
 ///
@@ -17,7 +17,7 @@ internal typealias MapMatchingCall = Result<MapMatchingResponse, SwiftlyRestErro
 ///   - alternates: Optional alternate trip responses.
 public struct MapMatchingResponse: Codable, Sendable {
     
-    let trip: TripResponse
-    let alternates: [TripResponse]?
+    public let trip: TripResponse
+    public let alternates: [TripResponse]?
     
 }

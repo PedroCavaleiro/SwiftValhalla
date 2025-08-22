@@ -19,14 +19,14 @@ import Foundation
 ///   - maxRoadClass: Highest road class allowed
 public struct SearchFilter: Codable, Sendable {
     
-    let excludeTunnel: Bool
-    let excludeBridge: Bool
-    let excludeToll: Bool
-    let excludeFerry: Bool
-    let excludeRamp: Bool
-    let excludeClosures: Bool
-    let minRoadClass: RoadClass
-    let maxRoadClass: RoadClass
+    public let excludeTunnel: Bool
+    public let excludeBridge: Bool
+    public let excludeToll: Bool
+    public let excludeFerry: Bool
+    public let excludeRamp: Bool
+    public let excludeClosures: Bool
+    public let minRoadClass: RoadClass
+    public let maxRoadClass: RoadClass
     
     /// Initializer with all default values
     /// - Parameters:
