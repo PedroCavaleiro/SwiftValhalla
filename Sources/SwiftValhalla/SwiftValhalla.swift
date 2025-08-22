@@ -13,7 +13,7 @@ public class SwiftValhalla {
     
     public static let shared = SwiftValhalla()
     
-    public private(set) var serverURL: URL? = nil
+    private var restClient: SwiftlyRest? = nil
     
     
     /// Configure the shared `SwiftValhalla` instance with a server URL string.
@@ -26,10 +26,9 @@ public class SwiftValhalla {
     ///           provided string cannot be converted to a valid `URL`.
     /// - Note: Call once early in your app's lifecycle (for example in `AppDelegate`
     ///         or during startup) before performing network operations.
-    public static func configure(serverURL: String) throws {
+    public func configure(serverURL: String) throws {
         if let url = URL(string: serverURL) {
-            SwiftValhalla.shared.serverURL = url
-            try! SwiftlyRest.shared.setBaseURL(serverURL)
+            self.restClient = SwiftlyRest(baseURL: url)
         } else {
             throw NSError(domain: "SwiftValhalla", code: 1001, userInfo: [NSLocalizedDescriptionKey : "Invalid server URL"])
         }
