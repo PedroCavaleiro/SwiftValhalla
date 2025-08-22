@@ -10,6 +10,11 @@ import SwiftlyRest
 
 public typealias MapMatchingCall = Result<MapMatchingResponse, SwiftlyRestError>
 
+/// Represents an alternate route option in the map matching response.
+public struct AlternateResponse: Codable, Sendable {
+    public let trip: TripResponse
+}
+
 /// Represents the response for a map matching request.
 ///
 /// - Parameters:
@@ -18,6 +23,6 @@ public typealias MapMatchingCall = Result<MapMatchingResponse, SwiftlyRestError>
 public struct MapMatchingResponse: Codable, Sendable {
     
     public let trip: TripResponse
-    public let alternates: [TripResponse]?
+    public let alternates: [AlternateResponse]?
     
 }

@@ -31,6 +31,7 @@ public struct SummaryResponse: Codable, Sendable {
     public let hasToll: Bool
     public let hasFerry: Bool
     public let hasHighway: Bool
+    public let hasTimeRestrictions: Bool
     public let minimumLatitude: Double
     public let minimumLongitude: Double
     public let maximumLatitude: Double
@@ -43,6 +44,7 @@ public struct SummaryResponse: Codable, Sendable {
         case hasToll = "has_toll"
         case hasFerry = "has_ferry"
         case hasHighway = "has_highway"
+        case hasTimeRestrictions = "has_time_restrictions"
         case minimumLatitude = "min_lat"
         case minimumLongitude = "min_lon"
         case maximumLatitude = "max_lat"

@@ -43,22 +43,22 @@ public struct Location: Codable, Sendable {
     
     public let latitude: Double
     public let longitude: Double
-    public let timestamp: Int
-    public let traceType: TraceType
+    public let timestamp: Int?
+    public let traceType: TraceType?
     public let heading: Int?
     public let headingTolerance: Int?
     public let street: Int?
     public let wayId: Int?
-    public let minimumReachability: Int
-    public let radius: Int
-    public let rankCandidates: Bool
-    public let preferredSide: PreferredSide
+    public let minimumReachability: Int?
+    public let radius: Int?
+    public let rankCandidates: Bool?
+    public let preferredSide: PreferredSide?
     public let displayLatitude: Double?
     public let displayLongitude: Double?
     public let searchCutoff: Int?
-    public let nodeSnapTolerance: Int
-    public let streetSideTolerance: Int
-    public let streetSideMaxDistance: Int
+    public let nodeSnapTolerance: Int?
+    public let streetSideTolerance: Int?
+    public let streetSideMaxDistance: Int?
     public let streetSideCutOff: RoadClass?
     public let searchFilter: SearchFilter?
     public let dateTime: Date?
@@ -71,6 +71,7 @@ public struct Location: Codable, Sendable {
     public let url: String?
     public let waiting: Int?
     public let sideOfStreet: SideOfStreet?
+    public let originalIndex: Int?
     
     /// Initializer
     /// - Parameters:
@@ -105,22 +106,22 @@ public struct Location: Codable, Sendable {
     public init(
         latitude: Double,
         longitude: Double,
-        timestamp: Int64,
+        timestamp: Int64? = nil,
         traceType: TraceType = .´break´,
         heading: Int? = nil,
-        headingTolerance: Int = 60,
+        headingTolerance: Int? = nil,
         street: Int? = nil,
         wayId: Int? = nil,
-        minimumReachability: Int = 50,
-        radius: Int = 0,
-        rankCandidates: Bool = false,
-        preferredSide: PreferredSide = .either,
+        minimumReachability: Int? = nil,
+        radius: Int? = nil,
+        rankCandidates: Bool? = nil,
+        preferredSide: PreferredSide? = nil,
         displayLatitude: Double? = nil,
         displayLongitude: Double? = nil,
-        searchCutoff: Int = 35,
-        nodeSnapTolerance: Int = 5,
-        streetSideTolerance: Int = 5,
-        streetSideMaxDistance: Int = 1000,
+        searchCutoff: Int? = nil,
+        nodeSnapTolerance: Int? = nil,
+        streetSideTolerance: Int? = nil,
+        streetSideMaxDistance: Int? = nil,
         streetSideCutOff: RoadClass? = nil,
         searchFilter: SearchFilter? = nil,
         name: String? = nil,
@@ -130,11 +131,12 @@ public struct Location: Codable, Sendable {
         country: String? = nil,
         phone: String? = nil,
         url: String? = nil,
-        waiting: Int? = nil
+        waiting: Int? = nil,
+        originalIndex: Int? = nil
     ) {
         self.latitude = latitude
         self.longitude = longitude
-        self.timestamp = Int(Double(timestamp) / 1000.0)
+        self.timestamp = timestamp.map { Int(Double($0) / 1000.0) }
         self.traceType = traceType
         self.heading = heading
         self.headingTolerance = headingTolerance
@@ -160,6 +162,7 @@ public struct Location: Codable, Sendable {
         self.url = url
         self.waiting = waiting
         self.sideOfStreet = nil
+        self.originalIndex = originalIndex
         
         if let displayLatitude = displayLatitude, let displayLongitude = displayLongitude {
             self.displayLatitude = displayLatitude
@@ -201,6 +204,7 @@ public struct Location: Codable, Sendable {
         case url = "url"
         case waiting = "waiting"
         case sideOfStreet = "side_of_street"
+        case originalIndex = "original_index"
     }
     
 }
