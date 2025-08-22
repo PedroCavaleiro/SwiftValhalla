@@ -123,14 +123,14 @@ public struct Location: Codable, Sendable {
         streetSideMaxDistance: Int = 1000,
         streetSideCutOff: RoadClass? = nil,
         searchFilter: SearchFilter? = nil,
-        name: String?,
-        city: String?,
-        state: String?,
-        postalCode: String?,
-        country: String?,
-        phone: String?,
-        url: String?,
-        waiting: Int?
+        name: String? = nil,
+        city: String? = nil,
+        state: String? = nil,
+        postalCode: String? = nil,
+        country: String? = nil,
+        phone: String? = nil,
+        url: String? = nil,
+        waiting: Int? = nil
     ) {
         self.latitude = latitude
         self.longitude = longitude
