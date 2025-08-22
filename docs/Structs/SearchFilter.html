@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ManeuverSignElement Structure Reference</title>
+    <title>SearchFilter Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/ManeuverSignElement" class="dashAnchor"></a>
-    <a title="ManeuverSignElement Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/SearchFilter" class="dashAnchor"></a>
+    <a title="SearchFilter Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a> (100% documented)</p>
@@ -31,7 +31,7 @@
         <img id="carat" src="../img/carat.png" alt=""/>
         <a href="../Structs.html">Structures</a>
         <img id="carat" src="../img/carat.png" alt=""/>
-        SwiftValhalla.ManeuverSignElement Structure Reference
+        SwiftValhalla.SearchFilter Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -212,15 +212,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ManeuverSignElement</h1>
+            <h1>SearchFilter</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ManeuverSignElement</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SearchFilter</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                 </div>
               </div>
-            <p>An individual element of a maneuver sign (text and consecutive count).</p>
+            <p>A set of optional filters to exclude candidate edges based on their attribution.</p>
 
               <div>
                 <h4>Parameters</h4>
@@ -229,24 +229,96 @@
                       <tr>
                         <td>
                           <code>
-                          <em>text</em>
+                          <em>excludeTunnel</em>
                           </code>
                         </td>
                         <td>
                           <div>
-                            <p>The sign text.</p>
+                            <p>Whether to exclude roads marked as tunnels</p>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <td>
                           <code>
-                          <em>consecutiveCount</em>
+                          <em>excludeBridge</em>
                           </code>
                         </td>
                         <td>
                           <div>
-                            <p>Number of consecutive occurrences for the element.</p>
+                            <p>Whether to exclude roads marked as bridges</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>excludeToll</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether to exclude toll</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>excludeFerry</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether to exclude ferry</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>excludeRamp</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether to exclude link roads marked as ramps, note that some turn channels are also marked as ramps</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>excludeClosures</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Whether to exclude roads considered closed due to live traffic closure</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>minRoadClass</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Lowest road class allowed</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <code>
+                          <em>maxRoadClass</em>
+                          </code>
+                        </td>
+                        <td>
+                          <div>
+                            <p>Highest road class allowed</p>
                           </div>
                         </td>
                       </tr>
@@ -260,9 +332,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhalla19ManeuverSignElementV4textSSvp"></a>
-                    <a name="//apple_ref/swift/Property/text" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla19ManeuverSignElementV4textSSvp">text</a>
+                    <a name="/s:13SwiftValhalla12SearchFilterV13excludeTunnel0E6Bridge0E4Toll0E5Ferry0E4Ramp0E8Closures12minRoadClass03maxmN0ACSb_S5bAA0mN0OAMtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(excludeTunnel:excludeBridge:excludeToll:excludeFerry:excludeRamp:excludeClosures:minRoadClass:maxRoadClass:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla12SearchFilterV13excludeTunnel0E6Bridge0E4Toll0E5Ferry0E4Ramp0E8Closures12minRoadClass03maxmN0ACSb_S5bAA0mN0OAMtcfc">init(excludeTunnel:<wbr>excludeBridge:<wbr>excludeToll:<wbr>excludeFerry:<wbr>excludeRamp:<wbr>excludeClosures:<wbr>minRoadClass:<wbr>maxRoadClass:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -270,41 +342,128 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Initializer with all default values</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">excludeTunnel</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">excludeBridge</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">excludeToll</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">excludeFerry</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">excludeRamp</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">excludeClosures</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nv">minRoadClass</span><span class="p">:</span> <span class="kt"><a href="../Enums/RoadClass.html">RoadClass</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">serviceOther</span><span class="p">,</span>
+    <span class="nv">maxRoadClass</span><span class="p">:</span> <span class="kt"><a href="../Enums/RoadClass.html">RoadClass</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">motorway</span>
+<span class="p">)</span></code></pre>
 
                         </div>
                       </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:13SwiftValhalla19ManeuverSignElementV16consecutiveCountSivp"></a>
-                    <a name="//apple_ref/swift/Property/consecutiveCount" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla19ManeuverSignElementV16consecutiveCountSivp">consecutiveCount</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">consecutiveCount</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeTunnel</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to exclude roads marked as tunnels</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeBridge</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to exclude roads marked as bridges</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeToll</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to exclude toll</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeFerry</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to exclude ferry</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeRamp</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to exclude link roads marked as ramps, note that some turn channels are also marked as ramps</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeClosures</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to exclude roads considered closed due to live traffic closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>minRoadClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Lowest road class allowed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxRoadClass</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Highest road class allowed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
