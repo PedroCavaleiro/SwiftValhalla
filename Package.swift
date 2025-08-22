@@ -29,5 +29,9 @@ let package = Package(
                 .product(name: "SwiftlyRest", package: "SwiftlyRest"),
             ]
         ),
+        .testTarget(
+            name: "SwiftValhallaTests",
+            dependencies: ["SwiftValhalla"]
+        ),
     ]
 )

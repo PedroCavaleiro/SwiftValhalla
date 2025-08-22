@@ -25,7 +25,7 @@ import Foundation
 ///   - verbalMultiCue: Whether verbal multi-cue is enabled.
 ///   - travelMode: Travel mode (drive, pedestrian, bicycle, transit).
 ///   - travelType: Specific travel type associated with the travel mode.
-///   - beginStreetNames: Optional beginning street names.
+///   - beginStreetNames: Optional beginning street names array.
 ///   - toll: Whether the maneuver involves a toll.
 ///   - highway: Whether the maneuver involves a highway.
 ///   - ferry: Whether the maneuver involves a ferry.
@@ -56,7 +56,7 @@ public struct ManeuverResponse: Codable, Sendable {
     public let verbalMultiCue: Bool
     public let travelMode: TravelMode
     public let travelType: TravelType
-    public let beginStreetNames: String?
+    public let beginStreetNames: [String]?
     public let toll: Bool
     public let highway: Bool
     public let ferry: Bool
@@ -89,7 +89,7 @@ public struct ManeuverResponse: Codable, Sendable {
         self.endShapeIndex = try container.decode(Int.self, forKey: .endShapeIndex)
         self.verbalMultiCue = try container.decodeIfPresent(Bool.self, forKey: .verbalMultiCue) ?? false
         self.travelMode = try container.decode(TravelMode.self, forKey: .travelMode)
-        self.beginStreetNames = try container.decodeIfPresent(String.self, forKey: .beginStreetNames)
+        self.beginStreetNames = try container.decodeIfPresent([String].self, forKey: .beginStreetNames)
         self.toll = try container.decodeIfPresent(Bool.self, forKey: .toll) ?? false
         self.highway = try container.decodeIfPresent(Bool.self, forKey: .highway) ?? false
         self.ferry = try container.decodeIfPresent(Bool.self, forKey: .ferry) ?? false

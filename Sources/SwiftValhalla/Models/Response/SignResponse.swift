@@ -36,7 +36,7 @@ public struct SignResponse: Codable, Sendable {
 ///   - consecutiveCount: Number of consecutive occurrences for the element.
 public struct ManeuverSignElement: Codable, Sendable {
     public let text: String
-    public let consecutiveCount: Int
+    public let consecutiveCount: Int?  // Made optional since it's not always present in responses
     
     enum CodingKeys: String, CodingKey {
         case text = "text"
