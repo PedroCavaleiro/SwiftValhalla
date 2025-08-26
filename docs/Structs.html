@@ -136,6 +136,9 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Structs/AlternateResponse.html">AlternateResponse</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/DirectionsOptions.html">DirectionsOptions</a>
               </li>
               <li class="nav-group-task">
@@ -145,7 +148,7 @@
                 <a href="Structs/LaneDirection.html">LaneDirection</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:13SwiftValhalla11LegResponseV">LegResponse</a>
+                <a href="Structs/LegResponse.html">LegResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Location.html">Location</a>
@@ -160,7 +163,7 @@
                 <a href="Structs/MapMatchingRequest.html">MapMatchingRequest</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs.html#/s:13SwiftValhalla19MapMatchingResponseV">MapMatchingResponse</a>
+                <a href="Structs/MapMatchingResponse.html">MapMatchingResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/RouteResponse.html">RouteResponse</a>
@@ -193,6 +196,12 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Typealiases.html#/s:13SwiftValhalla11Cyclabilitya">Cyclability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:13SwiftValhalla15MapMatchingCalla">MapMatchingCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:13SwiftValhalla12SideOfStreeta">SideOfStreet</a>
               </li>
               <li class="nav-group-task">
                 <a href="Typealiases.html#/s:13SwiftValhalla14Traversabilitya">Traversability</a>
@@ -258,6 +267,78 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LaneDirection</span> <span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla11LegResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/LegResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla11LegResponseV">LegResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a single leg within a route, containing its maneuvers,
+an optional summary, and an optional encoded shape.</p>
+
+                        <a href="Structs/LegResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LegResponse</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maneuvers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of maneuvers for the leg, if present.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>summary</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Summary information for the leg, if present.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shape</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Encoded polyline/string representing the leg&rsquo;s geometry, if present.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -1224,6 +1305,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:13SwiftValhalla17AlternateResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/AlternateResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla17AlternateResponseV">AlternateResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents an alternate route option in the map matching response.</p>
+
+                        <a href="Structs/AlternateResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AlternateResponse</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:13SwiftValhalla19MapMatchingResponseV"></a>
                     <a name="//apple_ref/swift/Struct/MapMatchingResponse" class="dashAnchor"></a>
                     <a class="token" href="#/s:13SwiftValhalla19MapMatchingResponseV">MapMatchingResponse</a>
@@ -1236,6 +1345,7 @@
                       <div class="abstract">
                         <p>Represents the response for a map matching request.</p>
 
+                        <a href="Structs/MapMatchingResponse.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -1342,77 +1452,6 @@ whether the lane is currently active or valid for a maneuver.</p>
                               <td>
                                 <div>
                                   <p>The direction(s) considered valid for the maneuver, if any.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:13SwiftValhalla11LegResponseV"></a>
-                    <a name="//apple_ref/swift/Struct/LegResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla11LegResponseV">LegResponse</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Represents a single leg within a route, containing its maneuvers,
-an optional summary, and an optional encoded shape.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LegResponse</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>maneuvers</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>An array of maneuvers for the leg, if present.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>summary</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Summary information for the leg, if present.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>shape</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Encoded polyline/string representing the leg&rsquo;s geometry, if present.</p>
                                 </div>
                               </td>
                             </tr>

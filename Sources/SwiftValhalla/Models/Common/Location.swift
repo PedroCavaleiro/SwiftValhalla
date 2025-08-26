@@ -41,9 +41,9 @@ import Foundation
 ///   - sideOfStreet: **(response only)** The side of street of a `break` `location` that is determined based on the actual route when the `location` is offset from the street. The possible values are `left` and `right`.
 public struct Location: Codable, Sendable {
     
-    public let latitude: Double
-    public let longitude: Double
-    public let timestamp: Int?
+    public let latitude: Double?   // Made optional - some responses only have original_index
+    public let longitude: Double?  // Made optional - some responses only have original_index
+    public let timestamp: String?  // Changed from Int? to String? to match JSON format
     public let traceType: TraceType?
     public let heading: Int?
     public let headingTolerance: Int?
@@ -61,7 +61,6 @@ public struct Location: Codable, Sendable {
     public let streetSideMaxDistance: Int?
     public let streetSideCutOff: RoadClass?
     public let searchFilter: SearchFilter?
-    public let dateTime: Date?
     public let name: String?
     public let city: String?
     public let state: String?
@@ -104,10 +103,10 @@ public struct Location: Codable, Sendable {
     ///   - url: URL for the place or location
     ///   - waiting: The waiting time in seconds at this location. E.g. when the route describes a pizza delivery tour, each location has a service time, which can be respected by setting `waiting` on the location, then the departure will be delayed by this amount in seconds. Only works for `break` or `break_through types.
     public init(
-        latitude: Double,
-        longitude: Double,
-        timestamp: Int64? = nil,
-        traceType: TraceType = .´break´,
+        latitude: Double,         // Keep required for existing API
+        longitude: Double,        // Keep required for existing API  
+        timestamp: String? = nil,  // Changed from Int64? to String?
+        traceType: TraceType = .`break`,  // Fixed backticks
         heading: Int? = nil,
         headingTolerance: Int? = nil,
         street: Int? = nil,
@@ -136,7 +135,7 @@ public struct Location: Codable, Sendable {
     ) {
         self.latitude = latitude
         self.longitude = longitude
-        self.timestamp = timestamp.map { Int(Double($0) / 1000.0) }
+        self.timestamp = timestamp  // Direct assignment since both are String?
         self.traceType = traceType
         self.heading = heading
         self.headingTolerance = headingTolerance
@@ -152,7 +151,6 @@ public struct Location: Codable, Sendable {
         self.streetSideMaxDistance = streetSideMaxDistance
         self.streetSideCutOff = streetSideCutOff
         self.searchFilter = searchFilter
-        self.dateTime = nil
         self.name = name
         self.city = city
         self.state = state
@@ -173,10 +171,44 @@ public struct Location: Codable, Sendable {
         }
     }
     
+    /// Convenience initializer for response-only locations that might only have original_index
+    public init(originalIndex: Int) {
+        self.latitude = nil
+        self.longitude = nil
+        self.timestamp = nil
+        self.traceType = nil
+        self.heading = nil
+        self.headingTolerance = nil
+        self.street = nil
+        self.wayId = nil
+        self.minimumReachability = nil
+        self.radius = nil
+        self.rankCandidates = nil
+        self.preferredSide = nil
+        self.displayLatitude = nil
+        self.displayLongitude = nil
+        self.searchCutoff = nil
+        self.nodeSnapTolerance = nil
+        self.streetSideTolerance = nil
+        self.streetSideMaxDistance = nil
+        self.streetSideCutOff = nil
+        self.searchFilter = nil
+        self.name = nil
+        self.city = nil
+        self.state = nil
+        self.postalCode = nil
+        self.country = nil
+        self.phone = nil
+        self.url = nil
+        self.waiting = nil
+        self.sideOfStreet = nil
+        self.originalIndex = originalIndex
+    }
+    
     enum CodingKeys: String, CodingKey {
         case latitude = "lat"
         case longitude = "lon"
-        case timestamp = "time"
+        case timestamp = "date_time"  // Fixed: JSON uses "date_time" not "time"
         case traceType = "type"
         case heading
         case headingTolerance = "heading_tolerance"
@@ -194,7 +226,6 @@ public struct Location: Codable, Sendable {
         case streetSideMaxDistance = "street_side_max_distance"
         case streetSideCutOff = "street_side_cutoff"
         case searchFilter = "search_filter"
-        case dateTime = "date_time"
         case name = "name"
         case city = "city"
         case state = "state"

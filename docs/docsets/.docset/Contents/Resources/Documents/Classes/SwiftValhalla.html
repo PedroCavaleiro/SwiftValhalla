@@ -138,6 +138,9 @@
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Structs/AlternateResponse.html">AlternateResponse</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/DirectionsOptions.html">DirectionsOptions</a>
               </li>
               <li class="nav-group-task">
@@ -147,7 +150,7 @@
                 <a href="../Structs/LaneDirection.html">LaneDirection</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:13SwiftValhalla11LegResponseV">LegResponse</a>
+                <a href="../Structs/LegResponse.html">LegResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Location.html">Location</a>
@@ -162,7 +165,7 @@
                 <a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs.html#/s:13SwiftValhalla19MapMatchingResponseV">MapMatchingResponse</a>
+                <a href="../Structs/MapMatchingResponse.html">MapMatchingResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/RouteResponse.html">RouteResponse</a>
@@ -195,6 +198,12 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:13SwiftValhalla11Cyclabilitya">Cyclability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla15MapMatchingCalla">MapMatchingCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12SideOfStreeta">SideOfStreet</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:13SwiftValhalla14Traversabilitya">Traversability</a>
@@ -256,36 +265,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhallaAAC9serverURL10Foundation0D0VSgvp"></a>
-                    <a name="//apple_ref/swift/Property/serverURL" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhallaAAC9serverURL10Foundation0D0VSgvp">serverURL</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">serverURL</span><span class="p">:</span> <span class="kt">URL</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:13SwiftValhallaAAC9configure9serverURLySS_tKFZ"></a>
+                    <a name="/s:13SwiftValhallaAAC9configure9serverURLySS_tKF"></a>
                     <a name="//apple_ref/swift/Method/configure(serverURL:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhallaAAC9configure9serverURLySS_tKFZ">configure(serverURL:<wbr>)</a>
+                    <a class="token" href="#/s:13SwiftValhallaAAC9configure9serverURLySS_tKF">configure(serverURL:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -295,7 +277,7 @@
                       <div class="abstract">
                         <p>Configure the shared <code>SwiftValhalla</code> instance with a server URL string.</p>
 
-<p>This parses the provided <code><a href="../Classes/SwiftValhalla.html#/s:13SwiftValhallaAAC9serverURL10Foundation0D0VSgvp">serverURL</a></code> string into a <code>URL</code> and stores it on
+<p>This parses the provided <code>serverURL</code> string into a <code>URL</code> and stores it on
 <code>SwiftValhalla.shared.serverURL</code> for use throughout the library.</p>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
@@ -315,7 +297,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="nv">serverURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">configure</span><span class="p">(</span><span class="nv">serverURL</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span></code></pre>
 
                         </div>
                       </div>
@@ -344,9 +326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhallaAAC11mapMatchingys6ResultOyAA03MapD8ResponseV11SwiftlyRest0hI5ErrorOGAA0fD7RequestVYaF"></a>
+                    <a name="/s:13SwiftValhallaAAC11mapMatchingys6ResultOyAA03MapD8ResponseV11SwiftlyRest0hI5ErrorOGAA0fD7RequestVYaKF"></a>
                     <a name="//apple_ref/swift/Method/mapMatching(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhallaAAC11mapMatchingys6ResultOyAA03MapD8ResponseV11SwiftlyRest0hI5ErrorOGAA0fD7RequestVYaF">mapMatching(_:<wbr>)</a>
+                    <a class="token" href="#/s:13SwiftValhallaAAC11mapMatchingys6ResultOyAA03MapD8ResponseV11SwiftlyRest0hI5ErrorOGAA0fD7RequestVYaKF">mapMatching(_:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Asynchronous
@@ -381,7 +363,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@MainActor</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">mapMatching</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a></span><span class="p">)</span> <span class="k">async</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Structs.html#/s:13SwiftValhalla19MapMatchingResponseV">MapMatchingResponse</a></span><span class="p">,</span> <span class="kt">SwiftlyRestError</span><span class="o">&gt;</span></code></pre>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">mapMatching</span><span class="p">(</span><span class="n">_</span> <span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a></span><span class="p">)</span> <span class="k">async</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/MapMatchingResponse.html">MapMatchingResponse</a></span><span class="p">,</span> <span class="kt">SwiftlyRestError</span><span class="o">&gt;</span></code></pre>
 
                         </div>
                       </div>
@@ -406,7 +388,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>A <code>Result</code> containing either a <code><a href="../Structs.html#/s:13SwiftValhalla19MapMatchingResponseV">MapMatchingResponse</a></code> on success or a <code>SwiftlyRestError</code> on failure.</p>
+                        <p>A <code>Result</code> containing either a <code><a href="../Structs/MapMatchingResponse.html">MapMatchingResponse</a></code> on success or a <code>SwiftlyRestError</code> on failure.</p>
                       </div>
                     </section>
                   </div>

@@ -25,7 +25,7 @@ import Foundation
 ///   - verbalMultiCue: Whether verbal multi-cue is enabled.
 ///   - travelMode: Travel mode (drive, pedestrian, bicycle, transit).
 ///   - travelType: Specific travel type associated with the travel mode.
-///   - beginStreetNames: Optional beginning street names.
+///   - beginStreetNames: Optional beginning street names array.
 ///   - toll: Whether the maneuver involves a toll.
 ///   - highway: Whether the maneuver involves a highway.
 ///   - ferry: Whether the maneuver involves a ferry.
@@ -46,7 +46,8 @@ public struct ManeuverResponse: Codable, Sendable {
     public let verbalSuccinctTransitionInstruction: String?
     public let verbalPreTransitionInstruction: String?
     public let verbalPostTransitionInstruction: String?
-    public let streetNames: [String]
+    public let verbalTransitionAlertInstruction: String?  // Added missing field
+    public let streetNames: [String]?  // Changed from [String] to [String]? to make optional
     public let time: Double
     public let length: Double
     public let cost: Double
@@ -55,7 +56,7 @@ public struct ManeuverResponse: Codable, Sendable {
     public let verbalMultiCue: Bool
     public let travelMode: TravelMode
     public let travelType: TravelType
-    public let beginStreetNames: String?
+    public let beginStreetNames: [String]?
     public let toll: Bool
     public let highway: Bool
     public let ferry: Bool
@@ -74,10 +75,11 @@ public struct ManeuverResponse: Codable, Sendable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.type = try container.decode(Int.self, forKey: .type)
         self.instruction = try container.decodeIfPresent(String.self, forKey: .instruction)
-        self.verbalSuccinctTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalSuccinctTransitionInstruction)
-        self.verbalPreTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalPreTransitionInstruction)
-        self.verbalPostTransitionInstruction = try? container.decodeIfPresent(String.self, forKey: .verbalPostTransitionInstruction)
-        self.streetNames = try container.decode([String].self, forKey: .streetNames)
+        self.verbalSuccinctTransitionInstruction = try container.decodeIfPresent(String.self, forKey: .verbalSuccinctTransitionInstruction)
+        self.verbalPreTransitionInstruction = try container.decodeIfPresent(String.self, forKey: .verbalPreTransitionInstruction)
+        self.verbalPostTransitionInstruction = try container.decodeIfPresent(String.self, forKey: .verbalPostTransitionInstruction)
+        self.verbalTransitionAlertInstruction = try container.decodeIfPresent(String.self, forKey: .verbalTransitionAlertInstruction)
+        self.streetNames = try container.decodeIfPresent([String].self, forKey: .streetNames)
         self.bearingBefore = try container.decodeIfPresent(Int.self, forKey: .bearingBefore)
         self.bearingAfter = try container.decodeIfPresent(Int.self, forKey: .bearingAfter)
         self.time = try container.decode(Double.self, forKey: .time)
@@ -85,12 +87,12 @@ public struct ManeuverResponse: Codable, Sendable {
         self.cost = try container.decode(Double.self, forKey: .cost)
         self.beginShapeIndex = try container.decode(Int.self, forKey: .beginShapeIndex)
         self.endShapeIndex = try container.decode(Int.self, forKey: .endShapeIndex)
-        self.verbalMultiCue = (try? container.decodeIfPresent(Bool.self, forKey: .verbalMultiCue)) ?? false
+        self.verbalMultiCue = try container.decodeIfPresent(Bool.self, forKey: .verbalMultiCue) ?? false
         self.travelMode = try container.decode(TravelMode.self, forKey: .travelMode)
-        self.beginStreetNames = try container.decodeIfPresent(String.self, forKey: .beginStreetNames)
-        self.toll = (try? container.decodeIfPresent(Bool.self, forKey: .toll)) ?? false
-        self.highway = (try? container.decodeIfPresent(Bool.self, forKey: .highway)) ?? false
-        self.ferry = (try? container.decodeIfPresent(Bool.self, forKey: .ferry)) ?? false
+        self.beginStreetNames = try container.decodeIfPresent([String].self, forKey: .beginStreetNames)
+        self.toll = try container.decodeIfPresent(Bool.self, forKey: .toll) ?? false
+        self.highway = try container.decodeIfPresent(Bool.self, forKey: .highway) ?? false
+        self.ferry = try container.decodeIfPresent(Bool.self, forKey: .ferry) ?? false
         self.sign = try container.decodeIfPresent(SignResponse.self, forKey: .sign)
         self.roundaboutExitCount = try container.decodeIfPresent(Int.self, forKey: .roundaboutExitCount)
         self.departInstruction = try container.decodeIfPresent(String.self, forKey: .departInstruction)
@@ -98,7 +100,7 @@ public struct ManeuverResponse: Codable, Sendable {
         self.arriveInstruction = try container.decodeIfPresent(String.self, forKey: .arriveInstruction)
         self.verbalArriveInstruction = try container.decodeIfPresent(String.self, forKey: .verbalArriveInstruction)
         self.transitInfo = try container.decodeIfPresent(TransitInfo.self, forKey: .transitInfo)
-        self.lanes = (try? container.decodeIfPresent([Lane].self, forKey: .lanes)) ?? []
+        self.lanes = try container.decodeIfPresent([Lane].self, forKey: .lanes)  // Fixed: Keep as optional
         
         switch travelMode {
         case .drive:
@@ -122,6 +124,7 @@ public struct ManeuverResponse: Codable, Sendable {
         case verbalSuccinctTransitionInstruction = "verbal_succinct_transition_instruction"
         case verbalPreTransitionInstruction = "verbal_pre_transition_instruction"
         case verbalPostTransitionInstruction = "verbal_post_transition_instruction"
+        case verbalTransitionAlertInstruction = "verbal_transition_alert_instruction"
         case streetNames = "street_names"
         case bearingAfter = "bearing_after"
         case time = "time"
