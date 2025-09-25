@@ -91,6 +91,9 @@
                 <a href="../Enums/PreferredSide.html">PreferredSide</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/PriorityType.html">PriorityType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/RoadClass.html">RoadClass</a>
               </li>
               <li class="nav-group-task">
@@ -135,10 +138,24 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/AlternateResponse.html">AlternateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Coordinates.html">Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CostingOptions.html">CostingOptions</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/DirectionsOptions.html">DirectionsOptions</a>
@@ -166,6 +183,15 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/MapMatchingResponse.html">MapMatchingResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixElement.html">MatrixElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixRequest.html">MatrixRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixResponse.html">MatrixResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/RouteResponse.html">RouteResponse</a>
@@ -605,9 +631,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhalla8LocationV8latitudeSdvp"></a>
+                    <a name="/s:13SwiftValhalla8LocationV8latitudeSdSgvp"></a>
                     <a name="//apple_ref/swift/Property/latitude" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla8LocationV8latitudeSdvp">latitude</a>
+                    <a class="token" href="#/s:13SwiftValhalla8LocationV8latitudeSdSgvp">latitude</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -621,7 +647,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -631,9 +657,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:13SwiftValhalla8LocationV9longitudeSdvp"></a>
+                    <a name="/s:13SwiftValhalla8LocationV9longitudeSdSgvp"></a>
                     <a name="//apple_ref/swift/Property/longitude" class="dashAnchor"></a>
-                    <a class="token" href="#/s:13SwiftValhalla8LocationV9longitudeSdvp">longitude</a>
+                    <a class="token" href="#/s:13SwiftValhalla8LocationV9longitudeSdSgvp">longitude</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -647,7 +673,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1403,8 +1429,8 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
-    <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
-    <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+    <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>         <span class="c1">// Keep required for existing API</span>
+    <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>        <span class="c1">// Keep required for existing API  </span>
     <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>  <span class="c1">// Changed from Int64? to String?</span>
     <span class="nv">traceType</span><span class="p">:</span> <span class="kt"><a href="../Enums/TraceType.html">TraceType</a></span> <span class="o">=</span> <span class="o">.</span><span class="p">`</span><span class="nv">break</span><span class="p">`,</span>  <span class="c1">// Fixed backticks</span>
     <span class="nv">heading</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
@@ -1592,7 +1618,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Latitude of the map location in degrees. If provided the <code><a href="../Structs/Location.html#/s:13SwiftValhalla8LocationV8latitudeSdvp">latitude</a></code> and <code><a href="../Structs/Location.html#/s:13SwiftValhalla8LocationV9longitudeSdvp">longitude</a></code> parameters will be treated as the routing location and the <code>display_lat</code> and <code>display_lon</code> will be used to determine the side of street.</p>
+                                  <p>Latitude of the map location in degrees. If provided the <code><a href="../Structs/Location.html#/s:13SwiftValhalla8LocationV8latitudeSdSgvp">latitude</a></code> and <code><a href="../Structs/Location.html#/s:13SwiftValhalla8LocationV9longitudeSdSgvp">longitude</a></code> parameters will be treated as the routing location and the <code>display_lat</code> and <code>display_lon</code> will be used to determine the side of street.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1782,12 +1808,39 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla8LocationV13originalIndexACSi_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(originalIndex:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla8LocationV13originalIndexACSi_tcfc">init(originalIndex:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience initializer for response-only locations that might only have original_index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">originalIndex</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-08-22)</p>
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-09-25)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

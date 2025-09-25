@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CostingOptions Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/CostingOptions" class="dashAnchor"></a>
+    <a title="CostingOptions Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Structs.html">Structures</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SwiftValhalla.CostingOptions Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SwiftValhalla.html">SwiftValhalla</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BicycleType.html">BicycleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CostingModel.html">CostingModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DirectionType.html">DirectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Driveability.html">Driveability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Filter.html">Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FlowSpeeds.html">FlowSpeeds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Format.html">Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Language.html">Language</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ManeuverType.html">ManeuverType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType.html">MatchType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NodeType.html">NodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PedestrianType.html">PedestrianType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferredSide.html">PreferredSide</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PriorityType.html">PriorityType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RoadClass.html">RoadClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SacScale.html">SacScale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeFormat.html">ShapeFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeMatch.html">ShapeMatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Sidewalk.html">Sidewalk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Surface.html">Surface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TraceType.html">TraceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitStopType.html">TransitStopType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitType.html">TransitType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelMode.html">TravelMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelType.html">TravelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Unit.html">Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Use.html">Use</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VehicleType.html">VehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AlternateResponse.html">AlternateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Coordinates.html">Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CostingOptions.html">CostingOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DirectionsOptions.html">DirectionsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Lane.html">Lane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LaneDirection.html">LaneDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LegResponse.html">LegResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverResponse.html">ManeuverResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverSignElement.html">ManeuverSignElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MapMatchingResponse.html">MapMatchingResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixElement.html">MatrixElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixRequest.html">MatrixRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixResponse.html">MatrixResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RouteResponse.html">RouteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SearchFilter.html">SearchFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignResponse.html">SignResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SummaryResponse.html">SummaryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceOptions.html">TraceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitInfo.html">TransitInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitStop.html">TransitStop</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Cyclabilitya">Cyclability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla15MapMatchingCalla">MapMatchingCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12SideOfStreeta">SideOfStreet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla14Traversabilitya">Traversability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12TripResponsea">TripResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Walkabilitya">Walkability</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CostingOptions</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CostingOptions</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kd">@unchecked</span> <span class="kt">Sendable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Configuration options for route costing and avoidance preferences.</p>
+
+<p>Use <code>CostingOptions</code> to specify routing preferences such as avoiding tolls, highways, or ferries,
+and to control various routing parameters including vehicle specifications, road preferences,
+and cost factors.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">options</span> <span class="o">=</span> <span class="kt">CostingOptions</span><span class="p">(</span>
+    <span class="nv">avoidTolls</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nv">avoidHighways</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">shortcut</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nv">maneuverPenalty</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span>
+    <span class="nv">countryChangingPenalty</span><span class="p">:</span> <span class="mf">600.0</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>All properties are optional, allowing you to specify only the preferences you need.
+Different costing models support different subsets of these options.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Avoidance%20Options"></a>
+                <a name="//apple_ref/swift/Section/Avoidance Options" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Avoidance%20Options"></a>
+                  <h3 class="section-name"><span>Avoidance Options</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV10avoidTollsSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/avoidTolls" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV10avoidTollsSbSgvp">avoidTolls</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to avoid toll roads in route calculation.</p>
+
+<p>When set to <code>true</code>, the routing algorithm will attempt to find routes that avoid toll roads.
+When <code>nil</code>, the default routing behavior applies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">avoidTolls</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV13avoidHighwaysSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/avoidHighways" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV13avoidHighwaysSbSgvp">avoidHighways</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to avoid highways and major roads in route calculation.</p>
+
+<p>When set to <code>true</code>, the routing algorithm will prefer local roads over highways.
+When <code>nil</code>, the default routing behavior applies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">avoidHighways</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV12avoidFerriesSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/avoidFerries" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV12avoidFerriesSbSgvp">avoidFerries</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to avoid ferry routes in route calculation.</p>
+
+<p>When set to <code>true</code>, the routing algorithm will attempt to find routes that avoid ferries.
+When <code>nil</code>, the default routing behavior applies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">avoidFerries</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV8shortcutSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/shortcut" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV8shortcutSbSgvp">shortcut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to prioritize the shortest possible route.</p>
+
+<p>When set to <code>true</code>, the routing algorithm will prioritize distance over travel time.
+When set to <code>false</code>, the algorithm may prefer faster routes even if they are longer.
+When <code>nil</code>, the default routing behavior applies.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">shortcut</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Maneuver%20and%20Turn%20Options"></a>
+                <a name="//apple_ref/swift/Section/Maneuver and Turn Options" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Maneuver%20and%20Turn%20Options"></a>
+                  <h3 class="section-name"><span>Maneuver and Turn Options</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV15maneuverPenaltySdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/maneuverPenalty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV15maneuverPenaltySdSgvp">maneuverPenalty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty (in seconds) applied when transitioning between roads that do not have consistent naming.</p>
+
+<p>This penalty helps create simpler routes by avoiding turns onto roads with different names.
+Default values vary by costing model.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">maneuverPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV8gateCostSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/gateCost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV8gateCostSdSgvp">gateCost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty applied to gate access.</p>
+
+<p>This penalty is applied when a gate must be opened to continue along the route.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">gateCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV14gateAccessCostSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/gateAccessCost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV14gateAccessCostSdSgvp">gateAccessCost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty applied when a gate has access restrictions based on private use or time-based restrictions.</p>
+
+<p>This penalty is separate from the basic gate cost and accounts for additional access complexity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">gateAccessCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV13tollBoothCostSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tollBoothCost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV13tollBoothCostSdSgvp">tollBoothCost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty applied to toll booth access.</p>
+
+<p>This penalty is applied when crossing toll booths, separate from avoiding tolls entirely.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tollBoothCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV19tollBoothAccessCostSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tollBoothAccessCost" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV19tollBoothAccessCostSdSgvp">tollBoothAccessCost</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty applied when a toll booth has access restrictions based on private use or time-based restrictions.</p>
+
+<p>This penalty accounts for additional complexity when accessing restricted toll facilities.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tollBoothAccessCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV22countryChangingPenaltySdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/countryChangingPenalty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV22countryChangingPenaltySdSgvp">countryChangingPenalty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty applied to country border crossings.</p>
+
+<p>This penalty is applied when the route crosses from one country to another.
+Can be used to minimize border crossings in international routing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">countryChangingPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Vehicle%20Specifications%20%28Auto%2FTruck%29"></a>
+                <a name="//apple_ref/swift/Section/Vehicle Specifications (Auto/Truck)" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Vehicle%20Specifications%20%28Auto%2FTruck%29"></a>
+                  <h3 class="section-name"><span>Vehicle Specifications (Auto/Truck)</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV6lengthSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV6lengthSdSgvp">length</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vehicle length in meters.</p>
+
+<p>Used for truck routing to determine road restrictions. Roads with length restrictions
+less than this value will be avoided or penalized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV5widthSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/width" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV5widthSdSgvp">width</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vehicle width in meters.</p>
+
+<p>Used for truck routing to determine road restrictions. Roads with width restrictions
+less than this value will be avoided or penalized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">width</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV6heightSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV6heightSdSgvp">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vehicle height in meters.</p>
+
+<p>Used for truck routing to determine road restrictions. Roads with height restrictions
+(such as low bridges) less than this value will be avoided or penalized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV6weightSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/weight" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV6weightSdSgvp">weight</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vehicle weight in metric tons.</p>
+
+<p>Used for truck routing to determine road restrictions. Roads with weight restrictions
+less than this value will be avoided or penalized.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">weight</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV8axleLoadSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/axleLoad" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV8axleLoadSdSgvp">axleLoad</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Vehicle axle load in metric tons.</p>
+
+<p>Used for truck routing to determine axle load restrictions on roads and bridges.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">axleLoad</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV9axleCountSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/axleCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV9axleCountSiSgvp">axleCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Number of axles on the vehicle.</p>
+
+<p>Used for truck routing where axle count restrictions apply.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">axleCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV6hazmatSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/hazmat" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV6hazmatSbSgvp">hazmat</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the vehicle is carrying hazardous materials.</p>
+
+<p>When <code>true</code>, roads that prohibit hazardous materials will be avoided.
+Used primarily for truck routing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">hazmat</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Road%20Type%20Preferences"></a>
+                <a name="//apple_ref/swift/Section/Road Type Preferences" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Road%20Type%20Preferences"></a>
+                  <h3 class="section-name"><span>Road Type Preferences</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV14motorwayFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/motorwayFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV14motorwayFactorSdSgvp">motorwayFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on motorways/highways.</p>
+
+<p>Values greater than 1.0 make motorways less preferred, while values less than 1.0
+make them more preferred. Default is typically 1.0 (neutral).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">motorwayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV11trunkFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/trunkFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV11trunkFactorSdSgvp">trunkFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on trunk roads.</p>
+
+<p>Values greater than 1.0 make trunk roads less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">trunkFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV13primaryFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/primaryFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV13primaryFactorSdSgvp">primaryFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on primary roads.</p>
+
+<p>Values greater than 1.0 make primary roads less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">primaryFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV15secondaryFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/secondaryFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV15secondaryFactorSdSgvp">secondaryFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on secondary roads.</p>
+
+<p>Values greater than 1.0 make secondary roads less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">secondaryFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV14tertiaryFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/tertiaryFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV14tertiaryFactorSdSgvp">tertiaryFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on tertiary roads.</p>
+
+<p>Values greater than 1.0 make tertiary roads less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">tertiaryFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV18unclassifiedFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/unclassifiedFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV18unclassifiedFactorSdSgvp">unclassifiedFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on unclassified roads.</p>
+
+<p>Values greater than 1.0 make unclassified roads less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">unclassifiedFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV17residentialFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/residentialFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV17residentialFactorSdSgvp">residentialFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on residential roads.</p>
+
+<p>Values greater than 1.0 make residential roads less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">residentialFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV17serviceRoadFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/serviceRoadFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV17serviceRoadFactorSdSgvp">serviceRoadFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that modifies the cost when traveling on service roads.</p>
+
+<p>Values greater than 1.0 make service roads less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceRoadFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Speed%20and%20Time%20Factors"></a>
+                <a name="//apple_ref/swift/Section/Speed and Time Factors" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Speed%20and%20Time%20Factors"></a>
+                  <h3 class="section-name"><span>Speed and Time Factors</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV8topSpeedSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/topSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV8topSpeedSdSgvp">topSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maximum speed for the route in kilometers per hour.</p>
+
+<p>This sets an upper limit on the speed used for time calculations, regardless of
+posted speed limits or default speeds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">topSpeed</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV11speedFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/speedFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV11speedFactorSdSgvp">speedFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor applied to edge speeds.</p>
+
+<p>Values greater than 1.0 increase effective speeds (making routes faster),
+while values less than 1.0 decrease effective speeds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">speedFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV12uturnPenaltySdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/uturnPenalty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV12uturnPenaltySdSgvp">uturnPenalty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty applied for making U-turns.</p>
+
+<p>This penalty discourages routes that require U-turn maneuvers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">uturnPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV10useTrafficSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/useTraffic" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV10useTrafficSbSgvp">useTraffic</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to use traffic information when available.</p>
+
+<p>When <code>true</code> and traffic data is available, routing will consider current traffic conditions.
+When <code>false</code> or <code>nil</code>, routing uses free-flow speeds.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">useTraffic</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Walking%2FPedestrian%20Options"></a>
+                <a name="//apple_ref/swift/Section/Walking/Pedestrian Options" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Walking%2FPedestrian%20Options"></a>
+                  <h3 class="section-name"><span>Walking/Pedestrian Options</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV12walkingSpeedSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/walkingSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV12walkingSpeedSdSgvp">walkingSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maximum walking speed in kilometers per hour.</p>
+
+<p>Used for pedestrian routing to calculate travel times.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">walkingSpeed</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV13walkwayFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/walkwayFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV13walkwayFactorSdSgvp">walkwayFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that influences walkway preferences.</p>
+
+<p>Values greater than 1.0 make walkways less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">walkwayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV14sidewalkFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/sidewalkFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV14sidewalkFactorSdSgvp">sidewalkFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that influences sidewalk preferences.</p>
+
+<p>Values greater than 1.0 make sidewalks less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sidewalkFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV11alleyFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/alleyFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV11alleyFactorSdSgvp">alleyFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that influences alley preferences.</p>
+
+<p>Values greater than 1.0 make alleys less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">alleyFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV14drivewayFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/drivewayFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV14drivewayFactorSdSgvp">drivewayFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that influences driveway preferences.</p>
+
+<p>Values greater than 1.0 make driveways less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">drivewayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV15crossingPenaltySdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/crossingPenalty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV15crossingPenaltySdSgvp">crossingPenalty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A penalty for crossing intersections.</p>
+
+<p>This penalty is applied when the pedestrian route crosses through intersections.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">crossingPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV8maxGradeSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/maxGrade" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV8maxGradeSdSgvp">maxGrade</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maximum grade (slope) that is preferred for walking routes.</p>
+
+<p>Steeper grades will be penalized to find more comfortable walking routes.
+Expressed as a percentage (e.g., 8.0 for 8% grade).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">maxGrade</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Bicycle%20Options"></a>
+                <a name="//apple_ref/swift/Section/Bicycle Options" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Bicycle%20Options"></a>
+                  <h3 class="section-name"><span>Bicycle Options</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV12cyclingSpeedSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cyclingSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV12cyclingSpeedSdSgvp">cyclingSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maximum cycling speed in kilometers per hour.</p>
+
+<p>Used for bicycle routing to calculate travel times.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cyclingSpeed</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV17bicycleLaneFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/bicycleLaneFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV17bicycleLaneFactorSdSgvp">bicycleLaneFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that influences bicycle lane preferences.</p>
+
+<p>Values greater than 1.0 make bicycle lanes less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">bicycleLaneFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV14cyclewayFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/cyclewayFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV14cyclewayFactorSdSgvp">cyclewayFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that influences cycleway preferences.</p>
+
+<p>Values greater than 1.0 make cycleways less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">cyclewayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV18mountainBikeFactorSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/mountainBikeFactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV18mountainBikeFactorSdSgvp">mountainBikeFactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A factor that influences mountain bike trail preferences.</p>
+
+<p>Values greater than 1.0 make mountain bike trails less preferred, while values less than 1.0
+make them more preferred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">mountainBikeFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV16avoidBadSurfacesSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/avoidBadSurfaces" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV16avoidBadSurfacesSbSgvp">avoidBadSurfaces</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to avoid roads with poor surfaces for cycling.</p>
+
+<p>When <code>true</code>, routes will prefer paved roads over unpaved surfaces.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">avoidBadSurfaces</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Transit%20Options"></a>
+                <a name="//apple_ref/swift/Section/Transit Options" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Transit%20Options"></a>
+                  <h3 class="section-name"><span>Transit Options</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV18transitModeFiltersSDySSypGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transitModeFilters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV18transitModeFiltersSDySSypGSgvp">transitModeFilters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Preferred mode filters for transit routing.</p>
+
+<p>This can be used to prefer or avoid specific types of transit (bus, rail, etc.).
+The specific format depends on the transit implementation.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">transitModeFilters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV22transitWalkingDistanceSdSgvp"></a>
+                    <a name="//apple_ref/swift/Property/transitWalkingDistance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV22transitWalkingDistanceSdSgvp">transitWalkingDistance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Walking distance to transit stops in meters.</p>
+
+<p>Maximum distance willing to walk to reach transit stops.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">transitWalkingDistance</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla14CostingOptionsV10avoidTolls0E8Highways0E7Ferries8shortcut15maneuverPenalty8gateCost0l6AccessM009tollBoothM00opnM0015countryChangingK06length5width6height6weight8axleLoad0W5Count6hazmat14motorwayFactor11trunkFactor13primaryFactor15secondaryFactor14tertiaryFactor18unclassifiedFactor17residentialFactor17serviceRoadFactor8topSpeed11speedFactor05uturnK010useTraffic12walkingSpeed13walkwayFactor14sidewalkFactor11alleyFactor14drivewayFactor08crossingK08maxGrade12cyclingSpeed17bicycleLaneFactor14cyclewayFactor18mountainBikeFactor0E11BadSurfaces18transitModeFilters22transitWalkingDistanceACSbSg_A19_A19_A19_SdSgA20_A20_A20_A20_A20_A20_A20_A20_A20_A20_SiSgA19_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A19_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A19_SDySSypGSgA20_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(avoidTolls:avoidHighways:avoidFerries:shortcut:maneuverPenalty:gateCost:gateAccessCost:tollBoothCost:tollBoothAccessCost:countryChangingPenalty:length:width:height:weight:axleLoad:axleCount:hazmat:motorwayFactor:trunkFactor:primaryFactor:secondaryFactor:tertiaryFactor:unclassifiedFactor:residentialFactor:serviceRoadFactor:topSpeed:speedFactor:uturnPenalty:useTraffic:walkingSpeed:walkwayFactor:sidewalkFactor:alleyFactor:drivewayFactor:crossingPenalty:maxGrade:cyclingSpeed:bicycleLaneFactor:cyclewayFactor:mountainBikeFactor:avoidBadSurfaces:transitModeFilters:transitWalkingDistance:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla14CostingOptionsV10avoidTolls0E8Highways0E7Ferries8shortcut15maneuverPenalty8gateCost0l6AccessM009tollBoothM00opnM0015countryChangingK06length5width6height6weight8axleLoad0W5Count6hazmat14motorwayFactor11trunkFactor13primaryFactor15secondaryFactor14tertiaryFactor18unclassifiedFactor17residentialFactor17serviceRoadFactor8topSpeed11speedFactor05uturnK010useTraffic12walkingSpeed13walkwayFactor14sidewalkFactor11alleyFactor14drivewayFactor08crossingK08maxGrade12cyclingSpeed17bicycleLaneFactor14cyclewayFactor18mountainBikeFactor0E11BadSurfaces18transitModeFilters22transitWalkingDistanceACSbSg_A19_A19_A19_SdSgA20_A20_A20_A20_A20_A20_A20_A20_A20_A20_SiSgA19_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A19_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A20_A19_SDySSypGSgA20_tcfc">init(avoidTolls:<wbr>avoidHighways:<wbr>avoidFerries:<wbr>shortcut:<wbr>maneuverPenalty:<wbr>gateCost:<wbr>gateAccessCost:<wbr>tollBoothCost:<wbr>tollBoothAccessCost:<wbr>countryChangingPenalty:<wbr>length:<wbr>width:<wbr>height:<wbr>weight:<wbr>axleLoad:<wbr>axleCount:<wbr>hazmat:<wbr>motorwayFactor:<wbr>trunkFactor:<wbr>primaryFactor:<wbr>secondaryFactor:<wbr>tertiaryFactor:<wbr>unclassifiedFactor:<wbr>residentialFactor:<wbr>serviceRoadFactor:<wbr>topSpeed:<wbr>speedFactor:<wbr>uturnPenalty:<wbr>useTraffic:<wbr>walkingSpeed:<wbr>walkwayFactor:<wbr>sidewalkFactor:<wbr>alleyFactor:<wbr>drivewayFactor:<wbr>crossingPenalty:<wbr>maxGrade:<wbr>cyclingSpeed:<wbr>bicycleLaneFactor:<wbr>cyclewayFactor:<wbr>mountainBikeFactor:<wbr>avoidBadSurfaces:<wbr>transitModeFilters:<wbr>transitWalkingDistance:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new costing options configuration.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">avoidTolls</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">avoidHighways</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">avoidFerries</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">shortcut</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">maneuverPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">gateCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">gateAccessCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">tollBoothCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">tollBoothAccessCost</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">countryChangingPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">length</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">width</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">height</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">weight</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">axleLoad</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">axleCount</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">hazmat</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">motorwayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">trunkFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">primaryFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">secondaryFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">tertiaryFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">unclassifiedFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">residentialFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">serviceRoadFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">topSpeed</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">speedFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">uturnPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">useTraffic</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">walkingSpeed</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">walkwayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">sidewalkFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">alleyFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">drivewayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">crossingPenalty</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">maxGrade</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">cyclingSpeed</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">bicycleLaneFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">cyclewayFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">mountainBikeFactor</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">avoidBadSurfaces</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">transitModeFilters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">transitWalkingDistance</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>avoidTolls</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to avoid toll roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>avoidHighways</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to avoid highways and major roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>avoidFerries</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to avoid ferry routes. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shortcut</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to prioritize the shortest route. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maneuverPenalty</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for turns between roads with inconsistent naming. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gateCost</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for gate access. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gateAccessCost</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for restricted gate access. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tollBoothCost</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for toll booth access. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tollBoothAccessCost</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for restricted toll booth access. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>countryChangingPenalty</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for country border crossings. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vehicle length in meters. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>width</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vehicle width in meters. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>height</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vehicle height in meters. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>weight</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vehicle weight in metric tons. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>axleLoad</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Vehicle axle load in metric tons. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>axleCount</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Number of vehicle axles. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hazmat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether vehicle carries hazardous materials. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>motorwayFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for motorways. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>trunkFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for trunk roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>primaryFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for primary roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>secondaryFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for secondary roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tertiaryFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for tertiary roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>unclassifiedFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for unclassified roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>residentialFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for residential roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serviceRoadFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for service roads. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>topSpeed</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum speed in km/h. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>speedFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Speed adjustment factor. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uturnPenalty</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for U-turns. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>useTraffic</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to use traffic information. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>walkingSpeed</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum walking speed in km/h. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>walkwayFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for walkways. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sidewalkFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for sidewalks. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alleyFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for alleys. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>drivewayFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for driveways. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>crossingPenalty</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Penalty for intersection crossings. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>maxGrade</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum preferred grade percentage. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cyclingSpeed</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum cycling speed in km/h. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bicycleLaneFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for bicycle lanes. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cyclewayFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for cycleways. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>mountainBikeFactor</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Cost factor for mountain bike trails. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>avoidBadSurfaces</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to avoid poor surfaces for cycling. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transitModeFilters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Preferred transit modes. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transitWalkingDistance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Walking distance to transit in meters. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SE6encode2toys7Encoder_p_tKF"></a>
+                    <a name="//apple_ref/swift/Method/encode(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">encode</span><span class="p">(</span><span class="n">to</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">Encoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-09-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

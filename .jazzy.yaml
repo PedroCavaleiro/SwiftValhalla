@@ -4,4 +4,4 @@ xcodebuild_arguments:
   - "-scheme"
   - "SwiftValhalla"
   - "-destination"
-  - "platform=iOS"
+  - "platform=iOS,id=00008130-0011282110EB8D3A"

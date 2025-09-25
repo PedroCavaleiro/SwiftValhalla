@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MatrixRequest Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/MatrixRequest" class="dashAnchor"></a>
+    <a title="MatrixRequest Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Index</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Structs.html">Structures</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        SwiftValhalla.MatrixRequest Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SwiftValhalla.html">SwiftValhalla</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BicycleType.html">BicycleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CostingModel.html">CostingModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DirectionType.html">DirectionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Driveability.html">Driveability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Filter.html">Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FlowSpeeds.html">FlowSpeeds</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Format.html">Format</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Language.html">Language</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ManeuverType.html">ManeuverType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MatchType.html">MatchType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NodeType.html">NodeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PedestrianType.html">PedestrianType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferredSide.html">PreferredSide</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PriorityType.html">PriorityType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RoadClass.html">RoadClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SacScale.html">SacScale</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeFormat.html">ShapeFormat</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ShapeMatch.html">ShapeMatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Sidewalk.html">Sidewalk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Surface.html">Surface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TraceType.html">TraceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitStopType.html">TransitStopType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransitType.html">TransitType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelMode.html">TravelMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TravelType.html">TravelType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Unit.html">Unit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Use.html">Use</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/VehicleType.html">VehicleType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AlternateResponse.html">AlternateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Coordinates.html">Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CostingOptions.html">CostingOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/DirectionsOptions.html">DirectionsOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Lane.html">Lane</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LaneDirection.html">LaneDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LegResponse.html">LegResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverResponse.html">ManeuverResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ManeuverSignElement.html">ManeuverSignElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MapMatchingRequest.html">MapMatchingRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MapMatchingResponse.html">MapMatchingResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixElement.html">MatrixElement</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixRequest.html">MatrixRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MatrixResponse.html">MatrixResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RouteResponse.html">RouteResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SearchFilter.html">SearchFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SignResponse.html">SignResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SummaryResponse.html">SummaryResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TraceOptions.html">TraceOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitInfo.html">TransitInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TransitStop.html">TransitStop</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Cyclabilitya">Cyclability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla15MapMatchingCalla">MapMatchingCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12SideOfStreeta">SideOfStreet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla14Traversabilitya">Traversability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla12TripResponsea">TripResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13SwiftValhalla11Walkabilitya">Walkability</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MatrixRequest</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MatrixRequest</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Sendable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A request structure for calculating travel time and distance matrices between multiple locations.</p>
+
+<p>Use <code>MatrixRequest</code> to compute one-to-many, many-to-one, or many-to-many matrices that provide
+travel times and distances between locations. This is useful for applications like:</p>
+
+<ul>
+<li>Route optimization</li>
+<li>Delivery planning</li>
+<li>Location analysis</li>
+<li>Travel time calculations</li>
+</ul>
+<h2 id='basic-usage' class='heading'>Basic Usage</h2>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">sources</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="kt">Location</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="mf">40.7128</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="o">-</span><span class="mf">74.0060</span><span class="p">),</span> <span class="c1">// New York</span>
+    <span class="kt">Location</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="mf">34.0522</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="o">-</span><span class="mf">118.2437</span><span class="p">)</span>  <span class="c1">// Los Angeles</span>
+<span class="p">]</span>
+
+<span class="k">let</span> <span class="nv">targets</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="kt">Location</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="mf">41.8781</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="o">-</span><span class="mf">87.6298</span><span class="p">),</span> <span class="c1">// Chicago</span>
+    <span class="kt">Location</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="mf">29.7604</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="o">-</span><span class="mf">95.3698</span><span class="p">)</span>  <span class="c1">// Houston</span>
+<span class="p">]</span>
+
+<span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">MatrixRequest</span><span class="p">(</span>
+    <span class="nv">sources</span><span class="p">:</span> <span class="n">sources</span><span class="p">,</span>
+    <span class="nv">targets</span><span class="p">:</span> <span class="n">targets</span><span class="p">,</span>
+    <span class="nv">costing</span><span class="p">:</span> <span class="o">.</span><span class="n">auto</span><span class="p">,</span>
+    <span class="nv">units</span><span class="p">:</span> <span class="o">.</span><span class="n">kilometers</span>
+<span class="p">)</span>
+</code></pre>
+<h2 id='using-vehicle-location-protocol' class='heading'>Using Vehicle Location Protocol</h2>
+
+<p>You can also create requests from objects conforming to <code><a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a></code>:</p>
+<pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Vehicle</span><span class="p">:</span> <span class="kt">VehicleLocationProtocol</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">vehicles</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Vehicle</span><span class="p">(</span><span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocationCoordinate2D</span><span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="mf">40.7128</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="o">-</span><span class="mf">74.0060</span><span class="p">))]</span>
+<span class="k">let</span> <span class="nv">request</span> <span class="o">=</span> <span class="kt">MatrixRequest</span><span class="p">(</span><span class="nv">sources</span><span class="p">:</span> <span class="n">vehicles</span><span class="p">,</span> <span class="nv">costing</span><span class="p">:</span> <span class="o">.</span><span class="n">auto</span><span class="p">)</span>
+</code></pre>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    If <code>targets</code> is not provided, the <code>sources</code> array will be used as both sources and targets,
+creating a symmetric matrix.
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV7sourcesSayAA8LocationVGvp"></a>
+                    <a name="//apple_ref/swift/Property/sources" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV7sourcesSayAA8LocationVGvp">sources</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of source locations for the matrix calculation.</p>
+
+<p>These represent the starting points for travel time and distance calculations.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">sources</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Location.html">Location</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV7targetsSayAA8LocationVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/targets" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV7targetsSayAA8LocationVGSgvp">targets</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of target locations for the matrix calculation.</p>
+
+<p>These represent the destination points for travel time and distance calculations.
+If <code>nil</code>, the <code><a href="../Structs/MatrixRequest.html#/s:13SwiftValhalla13MatrixRequestV7sourcesSayAA8LocationVGvp">sources</a></code> array will be used as targets, creating a symmetric matrix.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Location.html">Location</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV7costingAA12CostingModelOvp"></a>
+                    <a name="//apple_ref/swift/Property/costing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV7costingAA12CostingModelOvp">costing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The costing model to use for route calculations.</p>
+
+<p>Different costing models optimize for different vehicle types and travel preferences.
+Defaults to <code>.auto</code> for standard automobile routing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">costing</span><span class="p">:</span> <span class="kt"><a href="../Enums/CostingModel.html">CostingModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV14costingOptionsAA07CostingF0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/costingOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV14costingOptionsAA07CostingF0VSgvp">costingOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Additional options specific to the chosen costing model.</p>
+
+<p>Use this to configure routing preferences such as avoiding tolls, highways,
+or setting vehicle specifications for truck routing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">costingOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/CostingOptions.html">CostingOptions</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV5unitsAA4UnitOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/units" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV5unitsAA4UnitOSgvp">units</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Distance units for the response output.</p>
+
+<p>When specified, all distance values in the response will use these units.
+If <code>nil</code>, distances default to kilometers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">units</span><span class="p">:</span> <span class="kt"><a href="../Enums/Unit.html">Unit</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV7verboseSbSgvp"></a>
+                    <a name="//apple_ref/swift/Property/verbose" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV7verboseSbSgvp">verbose</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to return verbose output with additional information.</p>
+
+<p>When <code>true</code>, the response may include additional debugging or detailed information.
+When <code>false</code> or <code>nil</code>, returns standard matrix output.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">verbose</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV15matrixLocationsSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/matrixLocations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV15matrixLocationsSiSgvp">matrixLocations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Maximum number of locations allowed in the matrix calculation.</p>
+
+<p>This can be used to limit the size of the matrix calculation. If the total number
+of source and target locations exceeds this value, the request may be rejected.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">matrixLocations</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV5shapeAA11ShapeFormatOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/shape" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV5shapeAA11ShapeFormatOSgvp">shape</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Coordinate encoding format for any returned route shapes.</p>
+
+<p>Specifies how coordinate data should be encoded in the response if route shapes
+are included in the matrix output.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">shape</span><span class="p">:</span> <span class="kt"><a href="../Enums/ShapeFormat.html">ShapeFormat</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV7filtersAA21TraceAttributesFilterVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/filters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV7filtersAA21TraceAttributesFilterVSgvp">filters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Filters to apply to the response attributes.</p>
+
+<p>Use this to control which attributes are included in or excluded from the response,
+helping to reduce response size and processing time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">filters</span><span class="p">:</span> <span class="kt"><a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV12prioritizeByAA12PriorityTypeOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/prioritizeBy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV12prioritizeByAA12PriorityTypeOSgvp">prioritizeBy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether to prioritize calculations by time or distance.</p>
+
+<p>When set to <code>.time</code>, the matrix will optimize for fastest routes.
+When set to <code>.distance</code>, the matrix will optimize for shortest routes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">prioritizeBy</span><span class="p">:</span> <span class="kt"><a href="../Enums/PriorityType.html">PriorityType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV16excludeLocationsSaySiGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/excludeLocations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV16excludeLocationsSaySiGSgvp">excludeLocations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Indices of locations to exclude from the matrix calculation.</p>
+
+<p>Use this to exclude specific source or target locations from the calculation
+without removing them from the arrays. Indices refer to positions in the
+combined sources and targets arrays.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">excludeLocations</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV7sources7targets7costing0G7Options5units7verbose15matrixLocations5shape7filters12prioritizeBy07excludeL0ACSayAA8LocationVG_AQSgAA12CostingModelOAA0sH0VSgAA4UnitOSgSbSgSiSgAA11ShapeFormatOSgAA21TraceAttributesFilterVSgAA12PriorityTypeOSgSaySiGSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(sources:targets:costing:costingOptions:units:verbose:matrixLocations:shape:filters:prioritizeBy:excludeLocations:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV7sources7targets7costing0G7Options5units7verbose15matrixLocations5shape7filters12prioritizeBy07excludeL0ACSayAA8LocationVG_AQSgAA12CostingModelOAA0sH0VSgAA4UnitOSgSbSgSiSgAA11ShapeFormatOSgAA21TraceAttributesFilterVSgAA12PriorityTypeOSgSaySiGSgtcfc">init(sources:<wbr>targets:<wbr>costing:<wbr>costingOptions:<wbr>units:<wbr>verbose:<wbr>matrixLocations:<wbr>shape:<wbr>filters:<wbr>prioritizeBy:<wbr>excludeLocations:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a matrix request with the specified parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">sources</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Location.html">Location</a></span><span class="p">],</span>
+    <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Location.html">Location</a></span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">costing</span><span class="p">:</span> <span class="kt"><a href="../Enums/CostingModel.html">CostingModel</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">auto</span><span class="p">,</span>
+    <span class="nv">costingOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/CostingOptions.html">CostingOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">units</span><span class="p">:</span> <span class="kt"><a href="../Enums/Unit.html">Unit</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">verbose</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">matrixLocations</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">shape</span><span class="p">:</span> <span class="kt"><a href="../Enums/ShapeFormat.html">ShapeFormat</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">filters</span><span class="p">:</span> <span class="kt"><a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">prioritizeBy</span><span class="p">:</span> <span class="kt"><a href="../Enums/PriorityType.html">PriorityType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">excludeLocations</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sources</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of source locations for the matrix calculation.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>targets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of target locations. If <code>nil</code>, sources are used as targets.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Costing model for route calculations. Defaults to <code>.auto</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costingOptions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional costing-specific options. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>units</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Distance units for output. Defaults to <code>nil</code> (kilometers).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>verbose</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to return verbose output. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>matrixLocations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of locations allowed. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shape</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Coordinate encoding format for shapes. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Response attribute filters. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prioritizeBy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to prioritize by time or distance. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeLocations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Indices of locations to exclude. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13SwiftValhalla13MatrixRequestV7sources7targets7costing0G7Options5units7verbose15matrixLocations5shape7filters12prioritizeBy07excludeL0ACSayxG_AOSgAA12CostingModelOAA0rH0VSgAA4UnitOSgSbSgSiSgAA11ShapeFormatOSgAA21TraceAttributesFilterVSgAA12PriorityTypeOSgSaySiGSgtcAA23VehicleLocationProtocolRzlufc"></a>
+                    <a name="//apple_ref/swift/Method/init(sources:targets:costing:costingOptions:units:verbose:matrixLocations:shape:filters:prioritizeBy:excludeLocations:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13SwiftValhalla13MatrixRequestV7sources7targets7costing0G7Options5units7verbose15matrixLocations5shape7filters12prioritizeBy07excludeL0ACSayxG_AOSgAA12CostingModelOAA0rH0VSgAA4UnitOSgSbSgSiSgAA11ShapeFormatOSgAA21TraceAttributesFilterVSgAA12PriorityTypeOSgSaySiGSgtcAA23VehicleLocationProtocolRzlufc">init(sources:<wbr>targets:<wbr>costing:<wbr>costingOptions:<wbr>units:<wbr>verbose:<wbr>matrixLocations:<wbr>shape:<wbr>filters:<wbr>prioritizeBy:<wbr>excludeLocations:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a matrix request from objects conforming to <code><a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a></code>.</p>
+
+<p>This convenience initializer allows you to create matrix requests directly from
+custom objects that conform to <code><a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a></code>, such as vehicle or
+delivery location models.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">init</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt"><a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a></span><span class="o">&gt;</span><span class="p">(</span>
+    <span class="nv">sources</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">],</span>
+    <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">costing</span><span class="p">:</span> <span class="kt"><a href="../Enums/CostingModel.html">CostingModel</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">auto</span><span class="p">,</span>
+    <span class="nv">costingOptions</span><span class="p">:</span> <span class="kt"><a href="../Structs/CostingOptions.html">CostingOptions</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">units</span><span class="p">:</span> <span class="kt"><a href="../Enums/Unit.html">Unit</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">verbose</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">matrixLocations</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">shape</span><span class="p">:</span> <span class="kt"><a href="../Enums/ShapeFormat.html">ShapeFormat</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">filters</span><span class="p">:</span> <span class="kt"><a href="../Structs/TraceAttributesFilter.html">TraceAttributesFilter</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">prioritizeBy</span><span class="p">:</span> <span class="kt"><a href="../Enums/PriorityType.html">PriorityType</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">excludeLocations</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sources</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of objects conforming to <code><a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a></code> as source locations.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>targets</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of objects conforming to <code><a href="../Protocols/VehicleLocationProtocol.html">VehicleLocationProtocol</a></code> as target locations.
+If <code>nil</code>, sources are used as targets.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costing</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Costing model for route calculations. Defaults to <code>.auto</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>costingOptions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional costing-specific options. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>units</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Distance units for output. Defaults to <code>nil</code> (kilometers).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>verbose</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to return verbose output. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>matrixLocations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of locations allowed. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shape</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Coordinate encoding format for shapes. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Response attribute filters. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>prioritizeBy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether to prioritize by time or distance. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>excludeLocations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Indices of locations to exclude. Defaults to <code>nil</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-09-25)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
