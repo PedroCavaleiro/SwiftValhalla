@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// An enum with 3 values.
+/// Indicates the type of directions or instructions to be returned.
 public enum DirectionType: String, Codable, Sendable {
     
     /// Indicating no maneuvers or instructions should be returned.
