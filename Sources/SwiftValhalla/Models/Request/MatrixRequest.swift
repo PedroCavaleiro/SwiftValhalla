@@ -206,15 +206,15 @@ public struct MatrixRequest: Codable, Sendable {
         self.excludeLocations = excludeLocations
     }
     
-    /// Creates a matrix request from objects conforming to `LocationProtocol`.
+    /// Creates a matrix request from arrays of coordinates.
     ///
     /// This convenience initializer allows you to create matrix requests directly from
-    /// custom objects that conform to `LocationProtocol`, such as vehicle or
-    /// delivery location models.
+    /// arrays of `CLLocationCoordinate2D`, such as those representing vehicle or
+    /// delivery locations.
     ///
     /// - Parameters:
-    ///   - sources: Array of objects conforming to `LocationProtocol` as source locations.
-    ///   - targets: Array of objects conforming to `LocationProtocol` as target locations.
+    ///   - sources: Array of `CLLocationCoordinate2D` representing source locations.
+    ///   - targets: Array of `CLLocationCoordinate2D` representing target locations.
     ///     If `nil`, sources are used as targets.
     ///   - costing: Costing model for route calculations. Defaults to `.auto`.
     ///   - costingOptions: Additional costing-specific options. Defaults to `nil`.
