@@ -115,6 +115,43 @@ public class SwiftValhalla {
     /// }
     /// ```
     ///
+    /// ## Alternative Initialization
+    ///
+    /// `MatrixRequest` also supports providing `sources` and `targets` as arrays of your own types,
+    /// as long as the element type conforms to `LocationProtocol`.
+    ///
+    /// - Type: `[T]` where `T: LocationProtocol` (e.g., `MyVehicle`, `MyStop`, etc.)
+    ///
+    /// Example:
+    /// ```swift
+    /// import CoreLocation
+    ///
+    /// struct MyVehicle: LocationProtocol {
+    ///     let location: CLLocationCoordinate2D
+    ///     let vehicleId: String
+    ///     // other properties...
+    /// }
+    ///
+    /// let sources: [MyVehicle] = [
+    ///     MyVehicle(location: CLLocationCoordinate2D(latitude: 40.7128, longitude: -74.0060), vehicleId: "nyc"),
+    ///     MyVehicle(location: CLLocationCoordinate2D(latitude: 34.0522, longitude: -118.2437), vehicleId: "la")
+    /// ]
+    ///
+    /// let targets: [Location] = [
+    ///     Location(latitude: 41.8781, longitude: -87.6298),
+    ///     Location(latitude: 29.7604, longitude: -95.3698)
+    /// ]
+    ///
+    /// let request = MatrixRequest(
+    ///     sources: sources,   // [MyVehicle] or any `[T] where T: LocationProtocol`
+    ///     targets: targets,   // [MyVehicle] or any `[T] where T: LocationProtocol`
+    ///     costing: .auto,
+    ///     units: .kilometers
+    /// )
+    /// ```
+    ///
+    /// - Note: Both `sources` and `targets` may be arrays whose element type conforms to `LocationProtocol`.
+    ///
     /// - Important: Ensure that ``configure(serverURL:)`` has been called before using this method.
     public func matrix(_ data: MatrixRequest) async throws -> Result<MatrixResponse, SwiftlyRestError> {
         guard let restClient = self.restClient else {
@@ -142,3 +179,4 @@ public class SwiftValhalla {
     }
     
 }
+

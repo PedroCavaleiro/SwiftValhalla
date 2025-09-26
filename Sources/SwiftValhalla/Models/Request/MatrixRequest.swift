@@ -40,10 +40,10 @@ import Foundation
 ///
 /// ## Using Vehicle Location Protocol
 ///
-/// You can also create requests from objects conforming to `VehicleLocationProtocol`:
+/// You can also create requests from objects conforming to `LocationProtocol`:
 ///
 /// ```swift
-/// struct Vehicle: VehicleLocationProtocol {
+/// struct Vehicle: LocationProtocol {
 ///     let location: CLLocationCoordinate2D
 /// }
 /// 
@@ -161,15 +161,15 @@ public struct MatrixRequest: Codable, Sendable {
         self.excludeLocations = excludeLocations
     }
     
-    /// Creates a matrix request from objects conforming to `VehicleLocationProtocol`.
+    /// Creates a matrix request from objects conforming to `LocationProtocol`.
     ///
     /// This convenience initializer allows you to create matrix requests directly from
-    /// custom objects that conform to `VehicleLocationProtocol`, such as vehicle or
+    /// custom objects that conform to `LocationProtocol`, such as vehicle or
     /// delivery location models.
     ///
     /// - Parameters:
-    ///   - sources: Array of objects conforming to `VehicleLocationProtocol` as source locations.
-    ///   - targets: Array of objects conforming to `VehicleLocationProtocol` as target locations.
+    ///   - sources: Array of objects conforming to `LocationProtocol` as source locations.
+    ///   - targets: Array of objects conforming to `LocationProtocol` as target locations.
     ///     If `nil`, sources are used as targets.
     ///   - costing: Costing model for route calculations. Defaults to `.auto`.
     ///   - costingOptions: Additional costing-specific options. Defaults to `nil`.
@@ -180,8 +180,8 @@ public struct MatrixRequest: Codable, Sendable {
     ///   - filters: Response attribute filters. Defaults to `nil`.
     ///   - prioritizeBy: Whether to prioritize by time or distance. Defaults to `nil`.
     ///   - excludeLocations: Indices of locations to exclude. Defaults to `nil`.
-    public init<T: VehicleLocationProtocol>(
-        sources: [T],
+    public init<S: LocationProtocol, T: LocationProtocol>(
+        sources: [S],
         targets: [T]? = nil,
         costing: CostingModel = .auto,
         costingOptions: CostingOptions? = nil,
@@ -195,6 +195,51 @@ public struct MatrixRequest: Codable, Sendable {
     ) {
         self.sources = sources.map { Location(latitude: $0.location.latitude, longitude: $0.location.longitude) }
         self.targets = targets?.map { Location(latitude: $0.location.latitude, longitude: $0.location.longitude) }
+        self.costing = costing
+        self.costingOptions = costingOptions
+        self.units = units
+        self.verbose = verbose
+        self.matrixLocations = matrixLocations
+        self.shape = shape
+        self.filters = filters
+        self.prioritizeBy = prioritizeBy
+        self.excludeLocations = excludeLocations
+    }
+    
+    /// Creates a matrix request from objects conforming to `LocationProtocol`.
+    ///
+    /// This convenience initializer allows you to create matrix requests directly from
+    /// custom objects that conform to `LocationProtocol`, such as vehicle or
+    /// delivery location models.
+    ///
+    /// - Parameters:
+    ///   - sources: Array of objects conforming to `LocationProtocol` as source locations.
+    ///   - targets: Array of objects conforming to `LocationProtocol` as target locations.
+    ///     If `nil`, sources are used as targets.
+    ///   - costing: Costing model for route calculations. Defaults to `.auto`.
+    ///   - costingOptions: Additional costing-specific options. Defaults to `nil`.
+    ///   - units: Distance units for output. Defaults to `nil` (kilometers).
+    ///   - verbose: Whether to return verbose output. Defaults to `nil`.
+    ///   - matrixLocations: Maximum number of locations allowed. Defaults to `nil`.
+    ///   - shape: Coordinate encoding format for shapes. Defaults to `nil`.
+    ///   - filters: Response attribute filters. Defaults to `nil`.
+    ///   - prioritizeBy: Whether to prioritize by time or distance. Defaults to `nil`.
+    ///   - excludeLocations: Indices of locations to exclude. Defaults to `nil`.
+    public init(
+        sources: [CLLocationCoordinate2D],
+        targets: [CLLocationCoordinate2D]? = nil,
+        costing: CostingModel = .auto,
+        costingOptions: CostingOptions? = nil,
+        units: Unit? = nil,
+        verbose: Bool? = nil,
+        matrixLocations: Int? = nil,
+        shape: ShapeFormat? = nil,
+        filters: TraceAttributesFilter? = nil,
+        prioritizeBy: PriorityType? = nil,
+        excludeLocations: [Int]? = nil
+    ) {
+        self.sources = sources.map { Location(latitude: $0.latitude, longitude: $0.longitude) }
+        self.targets = targets?.map { Location(latitude: $0.latitude, longitude: $0.longitude) }
         self.costing = costing
         self.costingOptions = costingOptions
         self.units = units
