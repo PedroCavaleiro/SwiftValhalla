@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import SwiftlyRest
+@preconcurrency import SwiftlyRest
 
 @MainActor
 public class SwiftValhalla {

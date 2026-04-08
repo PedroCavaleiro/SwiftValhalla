@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/PedroCavaleiro/ExtendedSwift", .upToNextMajor(from: "1.3.1")),
-        .package(url: "https://github.com/PedroCavaleiro/SwiftlyRest.git", .upToNextMajor(from: "1.7.0")),
+        .package(url: "https://github.com/PedroCavaleiro/SwiftlyRest.git", .upToNextMajor(from: "2.0.0")),
     ],
     targets: [
         .target(

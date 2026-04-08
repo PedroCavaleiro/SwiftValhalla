@@ -78,7 +78,7 @@ public struct MatrixResponse: Codable, Sendable {
     /// Possible values:
     /// - `"kilometers"` - Distances in kilometers
     /// - `"miles"` - Distances in miles
-    public let units: String
+    public let units: Unit
     
     /// Optional encoded polyline shape.
     ///
@@ -114,7 +114,7 @@ public struct MatrixResponse: Codable, Sendable {
         targets: [Location],
         sourcesToTargets: [[MatrixElement?]],
         targetsToSources: [[MatrixElement?]]? = nil,
-        units: String = "kilometers",
+        units: Unit = .kilometers,
         shape: String? = nil,
         warnings: [String]? = nil,
         id: String? = nil
