@@ -1,5 +1,5 @@
 {
-  "originHash" : "fdb578fa1c093d9c4eb6f2d4ec02c471d3adaebe7d4506b7a1dcabfdaaca17ce",
+  "originHash" : "e845018ec829ba68dc86a5a553e825345fbe2b72b500b9c38d3397a60b5f7f15",
   "pins" : [
     {
       "identity" : "extendedswift",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/PedroCavaleiro/SwiftlyRest.git",
       "state" : {
-        "revision" : "d7875ea2f2043215392d20f97e0a7fcd73e02ffe",
-        "version" : "1.8.0"
+        "revision" : "db120755ae35347abe35db7d9383d830ae4782bb",
+        "version" : "2.0.0"
       }
     }
   ],
